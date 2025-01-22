@@ -1,0 +1,180 @@
+/* ---------------------------------------------------------
+   TEMA DARK & STRUTTURA GENERALE
+   --------------------------------------------------------- */
+   html, body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth; /* scrolling morbido */
+  }
+  
+  body {
+    background-color: #121212;  /* sfondo scuro */
+    color: #ffffff;             /* testo chiaro */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;         /* Nasconde eventuale scrollbar orizzontale */
+  }
+  
+  a, a:hover {
+    text-decoration: none;
+  }
+  
+  /* Navbar scura con accenti arancioni */
+  .navbar-dark .navbar-brand {
+    color: #ff6600; 
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    color: #ffffff;
+    transition: color 0.3s ease;
+  }
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: #ff6600;
+  }
+  
+  /* Bottoni con sfumature arancioni */
+  .btn-primary,
+  .btn-primary:hover,
+  .btn-primary:active,
+  .btn-primary:focus {
+    background-color: #ff6600 !important;
+    border-color: #ff6600 !important;
+  }
+  .btn-secondary,
+  .btn-secondary:hover,
+  .btn-secondary:active,
+  .btn-secondary:focus {
+    background-color: #333333 !important; 
+    border-color: #444444 !important;
+    color: #ff6600 !important;
+  }
+  
+  /* ---------------------------------------------------------
+     HERO CON PARALLAX
+     --------------------------------------------------------- */
+  .hero {
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(
+      rgba(18,18,18,0.7), 
+      rgba(18,18,18,0.7)
+    ),
+    url('../img/hero.webp');
+    background-attachment: fixed; /* parallax */
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+  }
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+  }
+  .hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 1.5rem auto;
+    line-height: 1.5;
+  }
+  .hero .btn-hero {
+    font-size: 1.1rem;
+    padding: 0.75rem 2rem;
+  }
+  
+  /* ---------------------------------------------------------
+     SEZIONI E CARD
+     --------------------------------------------------------- */
+  section {
+    position: relative; /* necessaria per shape divider */
+    padding: 4rem 1rem;
+  }
+  h2.section-title {
+    color: #ff6600;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .dark-card {
+    background-color: #1f1f1f;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* ---------------------------------------------------------
+     SHAPE DIVIDER (opzionale) - wave al fondo sezione
+     --------------------------------------------------------- */
+  .section-divider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: url('../img/wave-divider.svg') no-repeat center;
+    background-size: cover;
+  }
+  
+  /* ---------------------------------------------------------
+     CAROUSEL
+     --------------------------------------------------------- */
+  .carousel-item img {
+    max-height: 400px;
+    object-fit: cover;
+  }
+  .carousel-indicators {
+    bottom: -20px; /* sposta i pallini più giù per non sovrapporli al testo */
+  }
+  .carousel-inner {
+    margin-bottom: 2rem; /* lascia spazio per indicatori */
+  }
+  
+  /* ---------------------------------------------------------
+     FORM SCURI
+     --------------------------------------------------------- */
+  .form-control {
+    background-color: #222;
+    border: 1px solid #444;
+    color: #fff;
+  }
+  .form-control:focus {
+    box-shadow: none;
+    border-color: #ff6600;
+  }
+  
+  /* ---------------------------------------------------------
+     FOOTER
+     --------------------------------------------------------- */
+  footer {
+    background-color: #1c1c1c;
+    padding: 2rem 0;
+  }
+  footer a {
+    color: #ff6600;
+  }
+  
+  /* ---------------------------------------------------------
+     ANIMAZIONI
+     --------------------------------------------------------- */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .fade-up {
+    opacity: 0; /* inizialmente invisibile */
+    animation: fadeInUp 1s ease forwards; /* 1s di animazione, poi resta in place */
+    /* di default parte subito; per abilitarla su scroll,
+       vedi IntersectionObserver in script.js */
+  }
+  
