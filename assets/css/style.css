@@ -177,4 +177,114 @@
     /* di default parte subito; per abilitarla su scroll,
        vedi IntersectionObserver in script.js */
   }
+
+/* Contenitore “particles” */
+.particles {
+    position: fixed;       /* o absolute, ma fixed segue la viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;  /* in modo che non interferisca con i click */
+    overflow: hidden;      /* nasconde i pallini che escono dai bordi */
+    z-index: 1;            /* tieni un valore inferiore a quello del tuo contenuto, 
+                              se il resto del sito è z-index > 1 allora i pallini 
+                              rimangono dietro */
+  }
+  
+  /* Stile base di un pallino */
+  .dot {
+    position: absolute;
+    bottom: -50px;             /* Partono appena fuori dal fondo schermo */
+    left: 0;                   /* partono dal lato sinistro */
+    width: 20px;               /* dimensione di default */
+    height: 20px;
+    background-color: #ff6600; /* colore arancione */
+    border-radius: 50%;        /* rende il div un cerchio */
+    opacity: 0;                /* comincia trasparente */
+    animation: moveDot 10s linear infinite; /* animazione ciclica 10s */
+  }
+  
+  /* Keyframes base:
+     - Translate dal fondo-sinistra fino in alto-destra
+     - Cambiamo un po’ l’opacità per l’effetto dissolvenza
+  */
+  @keyframes moveDot {
+    0% {
+      transform: translate(0, 0) scale(0.5);
+      opacity: 0.0;
+    }
+    20% {
+      opacity: 0.7;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    80% {
+      opacity: 0.7;
+    }
+    100% {
+      transform: translate(120vw, -120vh) scale(1.2);
+      opacity: 0.0;
+    }
+  }
+  
+  /* Se vuoi variare velocità/dimensione per i singoli pallini,
+     aggiungi classi .dot-1, .dot-2, ecc.
+  */
+  .dot-1 {
+    width: 25px;
+    height: 25px;
+    animation-duration: 12s;
+    animation-delay: 0s;
+  }
+  
+  .dot-2 {
+    width: 15px;
+    height: 15px;
+    animation-duration: 8s;
+    animation-delay: 2s;
+  }
+  
+  .dot-3 {
+    width: 40px;
+    height: 40px;
+    animation-duration: 14s;
+    animation-delay: 4s;
+  }
+  
+  .dot-4 {
+    width: 10px;
+    height: 10px;
+    animation-duration: 9s;
+    animation-delay: 6s;
+  }
+  
+  .dot-5 {
+    width: 30px;
+    height: 30px;
+    animation-duration: 11s;
+    animation-delay: 1s;
+  }
+  
+  .dot-6 {
+    width: 20px;
+    height: 20px;
+    animation-duration: 10s;
+    animation-delay: 3s;
+  }
+  
+  .dot-7 {
+    width: 50px;
+    height: 50px;
+    animation-duration: 16s;
+    animation-delay: 5s;
+  }
+  
+  .dot-8 {
+    width: 15px;
+    height: 15px;
+    animation-duration: 8s;
+    animation-delay: 4s;
+  }
   
