@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <title>CIS Group Workshop - Home</title>
+  <title>CIS Group Workshop</title>
   
   <!-- Bootstrap CSS -->
   <link 
@@ -18,13 +18,174 @@
   />
   
   <!-- Stili Personalizzati -->
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    /* --------------------------
+       COLORI & TEMA DARK
+       -------------------------- */
+    html, body {
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth; /* per uno scrolling più morbido */
+    }
+    body {
+      background-color: #121212;  /* sfondo scuro */
+      color: #ffffff;             /* testo chiaro */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      overflow-x: hidden;         /* Nasconde eventuale scrollbar orizzontale */
+    }
+    
+    a, a:hover {
+      text-decoration: none;
+    }
+
+    /* Navbar scura con accenti arancioni */
+    .navbar-dark .navbar-brand {
+      color: #ff6600; 
+    }
+    .navbar-dark .navbar-nav .nav-link {
+      color: #ffffff;
+      transition: color 0.3s ease;
+    }
+    .navbar-dark .navbar-nav .nav-link:hover {
+      color: #ff6600;
+    }
+
+    /* Bottoni con sfumature arancioni */
+    .btn-primary,
+    .btn-primary:hover,
+    .btn-primary:active,
+    .btn-primary:focus {
+      background-color: #ff6600 !important;
+      border-color: #ff6600 !important;
+    }
+    .btn-secondary,
+    .btn-secondary:hover,
+    .btn-secondary:active,
+    .btn-secondary:focus {
+      background-color: #333333 !important; 
+      border-color: #444444 !important;
+      color: #ff6600 !important;
+    }
+
+    /* --------------------------
+       HERO con effetto PARALLAX
+       -------------------------- */
+    .hero {
+      position: relative;
+      height: 100vh;
+      /* Parallax:
+         Aggiungiamo un overlay con gradiente scuro sopra l'immagine di sfondo.
+      */
+      background: linear-gradient(
+        rgba(18,18,18,0.7), 
+        rgba(18,18,18,0.7)
+      ), 
+      url('assets/img/hero.webp');
+      background-attachment: fixed; /* effetto parallax */
+      background-position: center;
+      background-size: cover;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 1rem;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      letter-spacing: 1px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto 1.5rem auto;
+      line-height: 1.5;
+    }
+    .hero .btn-hero {
+      font-size: 1.1rem;
+      padding: 0.75rem 2rem;
+    }
+
+    /* --------------------------
+       SEZIONI
+       -------------------------- */
+    section {
+      padding: 4rem 1rem;
+    }
+    h2.section-title {
+      color: #ff6600;
+      font-weight: 700;
+      margin-bottom: 2rem;
+      text-align: center;
+      font-size: 2rem;
+    }
+    .dark-card {
+      background-color: #1f1f1f;
+      border-radius: 0.5rem;
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    /* Carousel (Program & Speakers) */
+    .carousel-item img {
+      max-height: 400px;
+      object-fit: cover;
+    }
+
+    /* Form scuri */
+    .form-control {
+      background-color: #222;
+      border: 1px solid #444;
+      color: #fff;
+    }
+    .form-control:focus {
+      box-shadow: none;
+      border-color: #ff6600;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #1c1c1c;
+      padding: 2rem 0;
+    }
+    footer a {
+      color: #ff6600;
+    }
+
+    /* --------------------------
+       ANIMAZIONI
+       -------------------------- */
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .fade-up {
+      opacity: 0; /* inizialmente invisibile */
+      animation: fadeInUp 1s ease forwards; /* 1s di animazione, poi resta in place */
+    }
+    /* Per attivare l'animazione al caricamento:
+       - Potresti usare JavaScript per far apparire 
+         l'animazione solo quando la sezione entra in viewport.
+       - Qui la eseguiamo direttamente al caricamento (on page load).
+    */
+
+  </style>
 </head>
 <body>
+
   <!-- NAVBAR -->
   <nav class="navbar navbar-dark navbar-expand-lg py-3">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="index.html">
+      <a class="navbar-brand fw-bold" href="#hero">
         CIS Group Workshop
       </a>
       <button 
@@ -44,16 +205,16 @@
       >
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="aims-scope.html">Aims & Scope</a>
+            <a class="nav-link" href="#aims-scope">Aims & Scope</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="topics-proceedings.html">Topics & Proceedings</a>
+            <a class="nav-link" href="#topics">Topics & Proceedings</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="program-speakers.html">Program & Speakers</a>
+            <a class="nav-link" href="#program">Program & Speakers</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="cfp-contacts.html">CfP & Contacts</a>
+            <a class="nav-link" href="#cfp">CfP & Contacts</a>
           </li>
         </ul>
       </div>
@@ -62,47 +223,268 @@
   <!-- FINE NAVBAR -->
 
   <!-- HERO -->
-  <header class="hero">
-    <div class="container">
-      <h1>CIS Group Workshop 2025</h1>
-      <p>
-        “Il workshop non cammina da solo: serve qualcuno che lo spinga!  
-         Il tempo è breve e c’è ancora tanto da fare. Let’s go!!!”
-      </p>
-      <a href="aims-scope.html" class="btn btn-primary btn-hero">
-        Scopri di più
-      </a>
-    </div>
+  <header class="hero" id="hero">
+    <h1 class="fade-up">CIS Group Workshop 2025</h1>
+    <p class="fade-up" style="animation-delay: 0.2s;">
+      “Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”
+    </p>
+    <a href="#aims-scope" class="btn btn-primary btn-hero fade-up" style="animation-delay: 0.4s;">
+      Scopri di più
+    </a>
   </header>
   <!-- FINE HERO -->
 
-  <!-- SEZIONE INTRO O NEWS -->
-  <section>
+  <!-- SEZIONE AIMS & SCOPE -->
+  <section id="aims-scope" class="fade-up">
     <div class="container">
-      <h2 class="section-title">Benvenuti</h2>
+      <h2 class="section-title">Aims & Scope</h2>
       <div class="dark-card">
         <p>
-          Questa è la pagina principale del workshop organizzato dal CIS Group.
-          Da qui puoi navigare verso le sezioni dedicate: 
+          Questo workshop mira a riunire ricercatori e professionisti per 
+          discutere idee innovative, metodologie avanzate e applicazioni 
+          legate all’ottimizzazione, alla ricerca operativa, alla computazione 
+          e ad altri ambiti correlati.
         </p>
-        <ul>
-          <li><a href="aims-scope.html">Aims & Scope</a></li>
-          <li><a href="topics-proceedings.html">Topics & Proceedings</a></li>
-          <li><a href="program-speakers.html">Program & Speakers</a></li>
-          <li><a href="cfp-contacts.html">CfP & Contacts</a></li>
-        </ul>
+        <p>
+          <strong>Obiettivo principale:</strong> stimolare collaborazioni 
+          e progetti, condividere esperienze su casi reali, e definire 
+          uno spazio di confronto su nuovi trend di ricerca.
+        </p>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="text-center">
+  <!-- SEZIONE TOPICS & PROCEEDINGS -->
+  <section id="topics" class="fade-up">
     <div class="container">
+      <h2 class="section-title">Topics & Proceedings</h2>
+      
+      <div class="dark-card">
+        <h4 style="color: #ff6600;">Topics</h4>
+        <ul>
+          <li>Metaeuristiche e Algoritmi Evolutivi</li>
+          <li>Ricerca Operativa</li>
+          <li>Machine Learning & Data Mining</li>
+          <li>Ottimizzazione Combinatoria e Continua</li>
+          <li>Scheduling e Routing Problems</li>
+          <li>Hybrid & Heuristic Approaches</li>
+        </ul>
+      </div>
+      
+      <div class="dark-card">
+        <h4 style="color: #ff6600;">Proceedings & Special Issue</h4>
+        <p>
+          È in corso una richiesta all’<em>EiC</em> (Editor-in-Chief) per definire
+          i Proceedings del workshop. Valutiamo anche la possibilità di dedicare
+          uno <strong>Special Issue</strong> su una rivista indicizzata e di rilievo,
+          in modo da attrarre contributi di qualità.
+        </p>
+        <p>
+          Maggiori dettagli verranno comunicati non appena avremo conferma ufficiale.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEZIONE PROGRAM & SPEAKERS -->
+<section id="program" class="fade-up">
+    <div class="container">
+      <h2 class="section-title">Program & Speakers</h2>
+      
+      <div class="dark-card">
+        <p>
+          Al momento, stiamo definendo il programma dettagliato del workshop. 
+          Ecco alcuni <em>Plenary Speakers</em> proposti:
+        </p>
+      </div>
+      
+      <!-- Carousel per Plenary Speakers -->
+      <div class="dark-card">
+        <h4 style="color: #ff6600;">Plenary Speakers Proposti</h4>
+        <div id="speakersCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button 
+              type="button" 
+              data-bs-target="#speakersCarousel" 
+              data-bs-slide-to="0" 
+              class="active"
+              aria-current="true" 
+              aria-label="Slide 1"
+            ></button>
+            <button 
+              type="button" 
+              data-bs-target="#speakersCarousel" 
+              data-bs-slide-to="1" 
+              aria-label="Slide 2"
+            ></button>
+            <button 
+              type="button" 
+              data-bs-target="#speakersCarousel" 
+              data-bs-slide-to="2" 
+              aria-label="Slide 3"
+            ></button>
+            <button 
+              type="button" 
+              data-bs-target="#speakersCarousel" 
+              data-bs-slide-to="3" 
+              aria-label="Slide 4"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <!-- Speaker 1 -->
+            <div class="carousel-item active text-center">
+              <img 
+                src="https://via.placeholder.com/800x400/000000/FFFFFF?text=Speaker+1" 
+                class="d-block mx-auto mb-4" 
+                alt="Speaker 1"
+              />
+              <h5>Speaker 1</h5>
+              <p>Descrizione sommaria dell’intervento o dei suoi ambiti di ricerca.</p>
+            </div>
+            <!-- Speaker 2 -->
+            <div class="carousel-item text-center">
+              <img 
+                src="https://via.placeholder.com/800x400/000000/FFFFFF?text=Speaker+2" 
+                class="d-block mx-auto mb-4" 
+                alt="Speaker 2"
+              />
+              <h5>Speaker 2</h5>
+              <p>Descrizione sommaria dell’intervento o dei suoi ambiti di ricerca.</p>
+            </div>
+            <!-- Speaker 3 -->
+            <div class="carousel-item text-center">
+              <img 
+                src="https://via.placeholder.com/800x400/000000/FFFFFF?text=Speaker+3" 
+                class="d-block mx-auto mb-4" 
+                alt="Speaker 3"
+              />
+              <h5>Speaker 3</h5>
+              <p>Descrizione sommaria dell’intervento o dei suoi ambiti di ricerca.</p>
+            </div>
+            <!-- Speaker 4 -->
+            <div class="carousel-item text-center">
+              <img 
+                src="https://via.placeholder.com/800x400/000000/FFFFFF?text=Speaker+4" 
+                class="d-block mx-auto mb-4" 
+                alt="Speaker 4"
+              />
+              <h5>Speaker 4</h5>
+              <p>Descrizione sommaria dell’intervento o dei suoi ambiti di ricerca.</p>
+            </div>
+          </div>
+          <button 
+            class="carousel-control-prev" 
+            type="button" 
+            data-bs-target="#speakersCarousel" 
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Precedente</span>
+          </button>
+          <button 
+            class="carousel-control-next" 
+            type="button" 
+            data-bs-target="#speakersCarousel" 
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Successivo</span>
+          </button>
+        </div>
+        
+        <p class="mt-4">
+          <strong>Program Committee:</strong> stiamo valutando chi invitare per far parte del Comitato di Programma. Per proposte o suggerimenti, <a href="#cfp">contattaci</a>!
+        </p>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- SEZIONE CfP & CONTACTS -->
+  <section id="cfp" class="fade-up">
+    <div class="container">
+      <h2 class="section-title">Call for Papers & Contacts</h2>
+      <div class="row">
+        <!-- CfP -->
+        <div class="col-md-6">
+          <div class="dark-card">
+            <h4 style="color: #ff6600;">Call for Papers</h4>
+            <p>
+              Stiamo preparando le <em>CfP</em>, che verranno diffuse 
+              al più presto tramite mailing list e sul sito ufficiale.
+            </p>
+            <p>
+              <strong>Scadenze (indicative):</strong><br />
+              • Submission deadline: [data]<br />
+              • Notifica autori: [data]<br />
+              • Camera-ready: [data]
+            </p>
+            <p>
+              <a href="#" class="btn btn-primary">Invia il tuo Paper</a>
+            </p>
+          </div>
+        </div>
+        
+        <!-- Contatti -->
+        <div class="col-md-6">
+          <div class="dark-card">
+            <h4 style="color: #ff6600;">Contatti</h4>
+            <p>
+              Per qualsiasi dubbio o proposta, non esitare a contattarci:
+            </p>
+            <p>
+              <strong>Email:</strong> n/a <br />
+              <strong>Tel:</strong> n/a 
+            </p>
+            <!-- Form di contatto -->
+            <form>
+              <div class="mb-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input 
+                  type="text" 
+                  class="form-control" 
+                  id="nome" 
+                  placeholder="Il tuo nome" 
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input 
+                  type="email" 
+                  class="form-control" 
+                  id="email" 
+                  placeholder="nome@esempio.com" 
+                />
+              </div>
+              <div class="mb-3">
+                <label for="messaggio" class="form-label">Messaggio</label>
+                <textarea 
+                  class="form-control" 
+                  id="messaggio" 
+                  rows="4" 
+                  placeholder="Scrivi il tuo messaggio..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Invia</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FINE SEZIONE CfP & CONTACTS -->
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container text-center">
       <p class="mb-0">
         &copy; <span id="annoCorrente"></span> CIS Group Workshop. Tutti i diritti riservati.
       </p>
       <p class="small mb-0">
-        <a href="#">Torna su</a>
+        <a href="#hero">Torna su</a>
       </p>
     </div>
   </footer>
@@ -112,7 +494,33 @@
   <script 
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
   </script>
+
   <!-- Script Personalizzato -->
-  <script src="assets/js/script.js"></script>
+  <script>
+    // Aggiorna l'anno corrente nel footer
+    document.getElementById('annoCorrente').textContent = new Date().getFullYear();
+
+    // Esempio: avvia animazione fade-up solo quando l'elemento è in viewport
+    // (Se vuoi che la comparsa avvenga all'apparire dell'elemento)
+    // Per semplicità qui esegue subito le animazioni; se vuoi l'effetto
+    // "scroll reveal", puoi usare IntersectionObserver:
+    /*
+    const faders = document.querySelectorAll('.fade-up');
+    const options = { threshold: 0.1 };
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.style.animationPlayState = 'running';
+          obs.unobserve(entry.target);
+        }
+      });
+    }, options);
+
+    faders.forEach(fader => {
+      fader.style.animationPlayState = 'paused';
+      observer.observe(fader);
+    });
+    */
+  </script>
 </body>
 </html>
