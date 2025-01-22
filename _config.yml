@@ -8,18 +8,18 @@
 
 # Site settings
 # title appears in the header
-title: workshop-template
+title: workshop CIS Group
 # description and keywords for meta tags
-description: "Create an OER workshop website quick and easy!"
-keywords: "workshops, OER, Open Education, websites, gh-pages, jekyll"
+description: "N/A"
+keywords: "N/A"
 
 # author settings for cc-by, appears in the footer
-author: evan will
-pub_year: 2018
-github_username: evanwill
+author: Alessio Mezzina
+pub_year: 2025
+github_username: timeassassinRG
 
 # add the full url for the github repository
-repo: "https://github.com/evanwill/workshop-template"
+repo: "https://github.com/timeassassinRG/WorkShop_CIS_GROUP"
 
 # site urls
 # Optional if using GitHub Pages! If building manually, these must be set correctly.
