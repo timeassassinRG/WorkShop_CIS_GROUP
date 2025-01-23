@@ -1,0 +1,25 @@
+{
+    "programTitle": "Program & Speakers",
+    "programIntro": "Al momento, stiamo definendo il programma dettagliato del workshop. Ecco alcuni <em>Plenary Speakers</em> proposti:",
+    "speakersLabel": "Plenary Speakers Proposti",
+    "speakers": [
+      {
+        "name": "Speaker 1",
+        "description": "Descrizione sommaria dell’intervento o dei suoi ambiti di ricerca."
+      },
+      {
+        "name": "Speaker 2",
+        "description": "Descrizione sommaria dell’intervento o dei suoi ambiti di ricerca."
+      },
+      {
+        "name": "Speaker 3",
+        "description": "Descrizione sommaria dell’intervento o dei suoi ambiti di ricerca."
+      },
+      {
+        "name": "Speaker 4",
+        "description": "Descrizione sommaria dell’intervento o dei suoi ambiti di ricerca."
+      }
+    ],
+    "programCommitteeText": "<strong>Program Committee:</strong> stiamo valutando chi invitare per far parte del Comitato di Programma. Per proposte o suggerimenti, <a href=\"#cfp\">contattaci</a>!"
+  }
+  

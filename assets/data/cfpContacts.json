@@ -1,0 +1,35 @@
+{
+    "cfpTitle": "Call for Papers & Contacts",
+    "cfpContent": {
+      "title": "WBO25 – Workshop on Big Optimization",
+      "locationDate": "<strong>31 July – 1 August 2025 | Acireale, Italy</strong><br/><em>Website:</em> [inserisci URL se disponibile]",
+      "intro": "Il focus di WBO25 è sulle sfide e sulle opportunità che emergono nel risolvere problemi di ottimizzazione su larga scala e di elevata complessità. Il workshop ospiterà <em>plenary talks</em>, sessioni tecniche e momenti di networking per favorire la collaborazione e l’innovazione nella comunità scientifica e industriale.",
+      "topicsOfInterest": "<strong>Topics of Interest</strong>: heuristics e metaheuristics, large-scale optimization, AI in optimization, metodologie e framework scalabili, e varie applicazioni in settori quali energia, logistica, healthcare, network design e supply chain.",
+      "submissionInfo": "<strong>Submission Information</strong><br/>Le proposte devono essere redatte in inglese e seguire le linee guida di formattazione del workshop (consultabili sul sito). L’invio avviene tramite la piattaforma online: [URL Sottomissione].",
+      "proceedingsInfo": "<strong>Proceedings & Special Issue</strong><br/>Gli articoli accettati saranno pubblicati nei proceedings del workshop, e una selezione potrà essere considerata per uno Special Issue su rivista indicizzata.",
+      "importantDates": {
+        "label": "<strong>Important Dates</strong>",
+        "dates": [
+          "Paper submission deadline: 10 May",
+          "Notification of acceptance: 15 June",
+          "Camera-ready deadline: TBA",
+          "Workshop dates: 31 July – 1 August 2025"
+        ]
+      }
+    },
+    "contacts": {
+      "title": "Contatti",
+      "info": "Per maggiori informazioni, visita il sito [URL] o scrivici a:",
+      "emailTel": "<strong>Email:</strong> n/a <br /><strong>Tel:</strong> n/a",
+      "formLabels": {
+        "nome": "Nome",
+        "email": "Email",
+        "messaggio": "Messaggio",
+        "nomePlaceholder": "Il tuo nome",
+        "emailPlaceholder": "nome@esempio.com",
+        "messaggioPlaceholder": "Scrivi il tuo messaggio..."
+      },
+      "sendButton": "Invia"
+    }
+  }
+  

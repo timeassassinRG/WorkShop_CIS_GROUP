@@ -15,7 +15,7 @@
     rel="stylesheet" 
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
   />
-  <!-- Stili Personalizzati (file esterno) -->
+  <!-- Stili Personalizzati -->
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
@@ -23,9 +23,9 @@
   <!-- NAVBAR -->
   <nav class="navbar navbar-dark navbar-expand-lg py-3">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#hero">
-        CIS Group Workshop
-      </a>
+      <!-- Brand -->
+      <a class="navbar-brand fw-bold" href="#hero" id="navbar-brand"></a>
+      
       <button 
         class="navbar-toggler" 
         type="button" 
@@ -43,16 +43,16 @@
       >
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#aims-scope">Aims & Scope</a>
+            <a class="nav-link" href="#aims-scope" id="nav-aims-scope"></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#topics">Topics & Proceedings</a>
+            <a class="nav-link" href="#topics" id="nav-topics"></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#program">Program & Speakers</a>
+            <a class="nav-link" href="#program" id="nav-program"></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#cfp">CfP & Contacts</a>
+            <a class="nav-link" href="#cfp" id="nav-cfp"></a>
           </li>
         </ul>
       </div>
@@ -62,124 +62,36 @@
 
   <!-- HERO -->
   <header class="hero" id="hero">
-    <h1 class="fade-up">CIS Group Workshop 2025</h1>
-    <p class="fade-up" style="animation-delay: 0.2s;">
-      “Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”
-    </p>
-    <a href="#aims-scope" class="btn btn-primary btn-hero fade-up" style="animation-delay: 0.4s;">
-      Scopri di più
-    </a>
+    <h1 class="fade-up" id="hero-title"></h1>
+    <p class="fade-up" id="hero-paragraph" style="animation-delay: 0.2s;"></p>
+    <a href="#aims-scope" class="btn btn-primary btn-hero fade-up" id="hero-button" style="animation-delay: 0.4s;"></a>
   </header>
   <!-- FINE HERO -->
 
   <!-- SEZIONE AIMS & SCOPE -->
   <section id="aims-scope" class="fade-up">
     <div class="container">
-      <h2 class="section-title">Aims & Scope</h2>
-      <div class="dark-card">
-        <p>
-          <strong>The International Workshop on Big Optimization (WBO25)</strong> mira a riunire ricercatori, professionisti 
-          e stakeholder provenienti da diversi ambiti (computer science, 
-          operations research, intelligenza artificiale, matematica applicata), 
-          con l’obiettivo di affrontare le sfide legate a problemi di 
-          ottimizzazione di ampia scala e alta complessità.
-        </p>
-        <p>
-          Il workshop promuove la collaborazione interdisciplinare e 
-          pone una particolare enfasi sulle <em>metaeuristiche</em>, 
-          <em>heuristiche</em> e metodi ibridi, nonché sulle applicazioni in 
-          contesti di <strong>big data</strong>, problem spaces 
-          ad alta dimensionalità e domini computazionalmente costosi. 
-          I partecipanti avranno l’opportunità di approfondire gli 
-          sviluppi emergenti, condividere best practices e delineare 
-          i futuri trend di ricerca in un settore in costante evoluzione.
-        </p>
-        <p>
-          <strong>WBO25</strong> si propone come una piattaforma inclusiva, 
-          incoraggiando contributi che spaziano dagli aspetti teorici 
-          e algoritmici fino alle applicazioni reali, includendo anche 
-          gli aspetti implementativi. Il programma prevede sessioni 
-          tecniche, presentazioni di lavori innovativi e 
-          <em>plenary talks</em> di esperti di riconosciuta fama, 
-          al fine di favorire scambi di idee e collaborazioni 
-          tra mondo accademico e industriale.
-        </p>
+      <h2 class="section-title" id="aims-scope-title"></h2>
+      <div class="dark-card" id="aims-scope-content">
+        <!-- par1, par2, par3 verranno iniettati in script.js -->
       </div>
     </div>
-    <!-- Shape divider di esempio (opzionale) -->
     <div class="section-divider"></div>
   </section>
 
   <!-- SEZIONE TOPICS & PROCEEDINGS -->
   <section id="topics" class="fade-up">
     <div class="container">
-      <h2 class="section-title">Topics & Proceedings</h2>
+      <h2 class="section-title" id="topics-title"></h2>
 
-      <!-- TOPICS DI WBO25 (improved) -->
-      <div class="dark-card mb-4">
-        <h4 style="color: #ff6600;">Topics</h4>
-
-        <h5>Algorithmic Foundations</h5>
-        <ul>
-          <li>Heuristics and metaheuristics (genetic algorithms, ant colony, particle swarm, etc.)</li>
-          <li>Hybrid methods combining exact and heuristic approaches</li>
-          <li>Multi-objective optimization and trade-off analysis</li>
-          <li>Optimization under uncertainty and stochastic methods</li>
-        </ul>
-
-        <h5>Artificial Intelligence in Optimization</h5>
-        <ul>
-          <li>Deep learning–assisted optimization</li>
-          <li>Reinforcement learning for optimization problems</li>
-        </ul>
-
-        <h5>Computational Techniques & Frameworks</h5>
-        <ul>
-          <li>Scalable algorithms for large-scale optimization</li>
-          <li>Parallel and distributed techniques</li>
-          <li>Cloud and high-performance computing solutions</li>
-        </ul>
-
-        <h5>Applications of Optimization</h5>
-        <ul>
-          <li>Big data analytics</li>
-          <li>Network design and communication systems</li>
-          <li>Supply chain, logistics, scheduling, and resource allocation</li>
-          <li>Energy management, smart grids, and robotics</li>
-          <li>Healthcare (drug design, hospital scheduling, etc.)</li>
-        </ul>
-
-        <h5>Emerging Trends</h5>
-        <ul>
-          <li>Bio-inspired and nature-inspired optimization methods</li>
-          <li>Quantum computing for optimization</li>
-          <li>Sustainability and climate change</li>
-        </ul>
+      <!-- TOPICS -->
+      <div class="dark-card mb-4" id="topics-content">
+        <!-- Qui dentro verranno creati via JS i <h5> e le <ul> con i <li> -->
       </div>
       
       <!-- PROCEEDINGS & SPECIAL ISSUE -->
-      <div class="dark-card">
-        <h4 style="color: #ff6600;">Proceedings & Special Issue</h4>
-        <p>
-          Tutti gli articoli accettati saranno pubblicati nei proceedings del workshop, 
-          previsti in <em>Lecture Notes in Computer Science (LNCS)</em>. 
-          Dopo un’ulteriore fase di peer review, alcuni lavori potranno 
-          essere invitati a sottomettere una versione estesa per uno 
-          <strong>Special Issue</strong> in una rivista di prestigio.
-        </p>
-        <p>
-          <strong>Lecture Notes in Computer Science (LNCS)</strong><br/>
-          Serie riconosciuta per la diffusione di ricerche d’avanguardia in 
-          ambito informatico (LNAI, LNBI, indicizzazione su CPCI, Scopus, 
-          EI Engineering Index, Google Scholar, DBLP, ecc.). 
-          <a href="https://www.springer.com/gp/computer-science/lncs" target="_blank">
-            Visita Springer LNCS
-          </a>
-        </p>
+      <div class="dark-card" id="proceedings-content">
+        <!-- Testo proceedings e special issue -->
       </div>
     </div>
     <div class="section-divider"></div>
@@ -188,20 +100,18 @@
   <!-- SEZIONE PROGRAM & SPEAKERS -->
   <section id="program" class="fade-up">
     <div class="container">
-      <h2 class="section-title">Program & Speakers</h2>
+      <h2 class="section-title" id="program-title"></h2>
       
-      <div class="dark-card">
-        <p>
-          Al momento, stiamo definendo il programma dettagliato del workshop. 
-          Ecco alcuni <em>Plenary Speakers</em> proposti:
-        </p>
+      <div class="dark-card" id="program-intro">
+        <!-- Testo introduttivo -->
       </div>
       
       <!-- Carousel per Plenary Speakers -->
       <div class="dark-card">
-        <h4 style="color: #ff6600;">Plenary Speakers Proposti</h4>
+        <h4 id="speakers-label" style="color: #ff6600;"></h4>
         <div id="speakersCarousel" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
+          <div class="carousel-indicators" id="speakersCarousel-indicators">
+            <!-- generati via JS se vuoi, o lasci statici -->
             <button 
               type="button" 
               data-bs-target="#speakersCarousel" 
@@ -229,46 +139,46 @@
               aria-label="Slide 4"
             ></button>
           </div>
-          <div class="carousel-inner">
-            <!-- Speaker 1 -->
+          <div class="carousel-inner" id="speakersCarousel-inner">
+            <!-- Slide 1 -->
             <div class="carousel-item active text-center">
               <img 
                 src="assets/img/doodle.jpg" 
                 class="d-block mx-auto mb-4" 
                 alt="Speaker 1"
               />
-              <h5>Speaker 1</h5>
-              <p>Descrizione sommaria dell’intervento o dei suoi ambiti di ricerca.</p>
+              <h5 id="speaker1-name"></h5>
+              <p id="speaker1-desc"></p>
             </div>
-            <!-- Speaker 2 -->
+            <!-- Slide 2 -->
             <div class="carousel-item text-center">
               <img 
                 src="assets/img/doodle.jpg" 
                 class="d-block mx-auto mb-4" 
                 alt="Speaker 2"
               />
-              <h5>Speaker 2</h5>
-              <p>Descrizione sommaria dell’intervento o dei suoi ambiti di ricerca.</p>
+              <h5 id="speaker2-name"></h5>
+              <p id="speaker2-desc"></p>
             </div>
-            <!-- Speaker 3 -->
+            <!-- Slide 3 -->
             <div class="carousel-item text-center">
               <img 
                 src="assets/img/doodle.jpg"  
                 class="d-block mx-auto mb-4" 
                 alt="Speaker 3"
               />
-              <h5>Speaker 3</h5>
-              <p>Descrizione sommaria dell’intervento o dei suoi ambiti di ricerca.</p>
+              <h5 id="speaker3-name"></h5>
+              <p id="speaker3-desc"></p>
             </div>
-            <!-- Speaker 4 -->
+            <!-- Slide 4 -->
             <div class="carousel-item text-center">
               <img 
                 src="assets/img/doodle.jpg"  
                 class="d-block mx-auto mb-4" 
                 alt="Speaker 4"
               />
-              <h5>Speaker 4</h5>
-              <p>Descrizione sommaria dell’intervento o dei suoi ambiti di ricerca.</p>
+              <h5 id="speaker4-name"></h5>
+              <p id="speaker4-desc"></p>
             </div>
           </div>
           <button 
@@ -291,8 +201,8 @@
           </button>
         </div>
         
-        <p class="mt-4">
-          <strong>Program Committee:</strong> stiamo valutando chi invitare per far parte del Comitato di Programma. Per proposte o suggerimenti, <a href="#cfp">contattaci</a>!
+        <p class="mt-4" id="program-committee-text">
+          <!-- Testo su Program Committee -->
         </p>
       </div>
     </div>
@@ -303,91 +213,53 @@
   <!-- SEZIONE CfP & CONTACTS -->
   <section id="cfp" class="fade-up">
     <div class="container">
-      <h2 class="section-title">Call for Papers & Contacts</h2>
+      <h2 class="section-title" id="cfp-title"></h2>
       <div class="row">
+        
         <!-- CfP -->
         <div class="col-md-6">
-          <div class="dark-card">
-            <h4 style="color: #ff6600;">WBO25 – Workshop on Big Optimization</h4>
-            <p>
-              <strong>31 July – 1 August 2025 | Acireale, Italy</strong><br/>
-              <em>Website:</em> [inserisci URL se disponibile]
-            </p>
-            <p>
-              Il focus di WBO25 è sulle sfide e sulle opportunità che emergono 
-              nel risolvere problemi di ottimizzazione su larga scala e di elevata 
-              complessità. Il workshop ospiterà <em>plenary talks</em>, sessioni 
-              tecniche e momenti di networking per favorire la collaborazione 
-              e l’innovazione nella comunità scientifica e industriale.
-            </p>
-            <p>
-              <strong>Topics of Interest</strong>: heuristics e metaheuristics, 
-              large-scale optimization, AI in optimization, metodologie e 
-              framework scalabili, e varie applicazioni in settori quali 
-              energia, logistica, healthcare, network design e supply chain.
-            </p>
-            <p>
-              <strong>Submission Information</strong><br/>
-              Le proposte devono essere redatte in inglese e seguire le linee 
-              guida di formattazione del workshop (consultabili sul sito). 
-              L’invio avviene tramite la piattaforma online: [URL Sottomissione].
-            </p>
-            <p>
-              <strong>Proceedings & Special Issue</strong><br/>
-              Gli articoli accettati saranno pubblicati nei proceedings del 
-              workshop, e una selezione potrà essere considerata per uno 
-              Special Issue su rivista indicizzata.
-            </p>
-            <p>
-              <strong>Important Dates</strong><br/>
-              • Paper submission deadline: 10 May<br/>
-              • Notification of acceptance: 15 June<br/>
-              • Camera-ready deadline: TBA<br/>
-              • Workshop dates: 31 July – 1 August 2025
-            </p>
+          <div class="dark-card" id="cfp-content">
+            <!-- Contenuto CfP (WBO25, date, info) -->
           </div>
         </div>
         
         <!-- Contatti -->
         <div class="col-md-6">
           <div class="dark-card">
-            <h4 style="color: #ff6600;">Contatti</h4>
-            <p>
-              Per maggiori informazioni, visita il sito [URL] o scrivici a:
-            </p>
-            <p>
-              <strong>Email:</strong> n/a <br />
-              <strong>Tel:</strong> n/a 
-            </p>
+            <h4 style="color: #ff6600;" id="contacts-title"></h4>
+            <p id="contacts-info"></p>
+            <p id="contacts-emailtel"></p>
+            
             <!-- Form di contatto -->
             <form>
               <div class="mb-3">
-                <label for="nome" class="form-label">Nome</label>
+                <label for="nome" class="form-label" id="label-nome"></label>
                 <input 
                   type="text" 
                   class="form-control" 
                   id="nome" 
-                  placeholder="Il tuo nome" 
+                  placeholder=""
                 />
               </div>
               <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
+                <label for="email" class="form-label" id="label-email"></label>
                 <input 
                   type="email" 
                   class="form-control" 
                   id="email" 
-                  placeholder="nome@esempio.com" 
+                  placeholder=""
                 />
               </div>
               <div class="mb-3">
-                <label for="messaggio" class="form-label">Messaggio</label>
+                <label for="messaggio" class="form-label" id="label-messaggio"></label>
                 <textarea 
                   class="form-control" 
                   id="messaggio" 
                   rows="4" 
-                  placeholder="Scrivi il tuo messaggio..."></textarea>
+                  placeholder=""
+                ></textarea>
               </div>
-              <button type="submit" class="btn btn-primary">Invia</button>
+              <button type="submit" class="btn btn-primary" id="btn-invia"></button>
             </form>
           </div>
         </div>
@@ -400,11 +272,9 @@
   <!-- FOOTER -->
   <footer>
     <div class="container text-center">
-      <p class="mb-0">
-        &copy; <span id="annoCorrente"></span> CIS Group Workshop. Tutti i diritti riservati.
-      </p>
+      <p class="mb-0" id="footer-text"></p>
       <p class="small mb-0">
-        <a href="#hero">Torna su</a>
+        <a href="#hero" id="footer-link"></a>
       </p>
     </div>
   </footer>
