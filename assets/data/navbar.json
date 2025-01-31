@@ -1,10 +1,8 @@
 {
-    "brand": "CIS Group Workshop",
-    "links": {
+  "brand": "WBO25",
+  "links": {
       "aimsScope": "Aims & Scope",
-      "topics": "Topics & Proceedings",
-      "program": "Program & Speakers",
-      "cfp": "CfP & Contacts"
-    }
+      "topics": "Topics",
+      "program": "Program & Speakers"
   }
-  
+}
