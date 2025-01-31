@@ -1,10 +1,9 @@
 {
-    "brand": "CIS Group Workshop",
-    "links": {
-      "aimsScope": "Aims & Scope",
-      "topics": "Topics & Proceedings",
-      "program": "Program & Speakers",
-      "cfp": "CfP & Contacts"
-    }
+  "brand": "WBO25 – International Workshop on Big Optimization",
+  "links": {
+    "aimsScope": "Aims & Scope",
+    "topics": "Topics",
+    "program": "Program & Speakers",
+    "importantDates": "Important Dates"
   }
-  
+}

@@ -1,9 +1,6 @@
 {
-    "title": "Aims & Scope",
-    "paragraphs": [
-      "<strong>The International Workshop on Big Optimization (WBO25)</strong> mira a riunire ricercatori, professionisti e stakeholder provenienti da diversi ambiti (computer science, operations research, intelligenza artificiale, matematica applicata), con l’obiettivo di affrontare le sfide legate a problemi di ottimizzazione di ampia scala e alta complessità.",
-      "Il workshop promuove la collaborazione interdisciplinare e pone una particolare enfasi sulle <em>metaeuristiche</em>, <em>heuristiche</em> e metodi ibridi, nonché sulle applicazioni in contesti di <strong>big data</strong>, problem spaces ad alta dimensionalità e domini computazionalmente costosi. I partecipanti avranno l’opportunità di approfondire gli sviluppi emergenti, condividere best practices e delineare i futuri trend di ricerca in un settore in costante evoluzione.",
-      "<strong>WBO25</strong> si propone come una piattaforma inclusiva, incoraggiando contributi che spaziano dagli aspetti teorici e algoritmici fino alle applicazioni reali, includendo anche gli aspetti implementativi. Il programma prevede sessioni tecniche, presentazioni di lavori innovativi e <em>plenary talks</em> di esperti di riconosciuta fama, al fine di favorire scambi di idee e collaborazioni tra mondo accademico e industriale."
-    ]
-  }
-  
+  "aimsScopeTitle": "Aims & Scope",
+  "paragraphs": [
+    "The International Workshop on Big Optimization (WBO25) brings together researchers, practitioners, and industry stakeholders from fields such as Computer Science, Operations Research, Artificial Intelligence, and Applied Mathematics to address the challenges of large-scale and high-complexity optimization problems."
+  ]
+}

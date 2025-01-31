@@ -1,25 +1,10 @@
 {
-    "programTitle": "Program & Speakers",
-    "programIntro": "Al momento, stiamo definendo il programma dettagliato del workshop. Ecco alcuni <em>Plenary Speakers</em> proposti:",
-    "speakersLabel": "Plenary Speakers Proposti",
-    "speakers": [
-      {
-        "name": "Speaker 1",
-        "description": "Descrizione sommaria dell’intervento o dei suoi ambiti di ricerca."
-      },
-      {
-        "name": "Speaker 2",
-        "description": "Descrizione sommaria dell’intervento o dei suoi ambiti di ricerca."
-      },
-      {
-        "name": "Speaker 3",
-        "description": "Descrizione sommaria dell’intervento o dei suoi ambiti di ricerca."
-      },
-      {
-        "name": "Speaker 4",
-        "description": "Descrizione sommaria dell’intervento o dei suoi ambiti di ricerca."
-      }
-    ],
-    "programCommitteeText": "<strong>Program Committee:</strong> stiamo valutando chi invitare per far parte del Comitato di Programma. Per proposte o suggerimenti, <a href=\"#cfp\">contattaci</a>!"
-  }
-  
+  "programTitle": "Program & Speakers",
+  "programIntro": "Detailed program schedule will be announced soon.",
+  "speakersLabel": "Keynote Speakers",
+  "speakers": [
+    {"name": "Speaker 1", "description": "Expert in large-scale optimization", "photo": "assets/img/speaker1.jpg"},
+    {"name": "Speaker 2", "description": "Pioneer in AI-driven heuristics", "photo": "assets/img/speaker2.jpg"}
+  ],
+  "programCommitteeText": "<strong>General Chairs:</strong> Claudia Cavallaro, Carolina Crespi, Francesco Zito<br/><strong>Scientific Committee:</strong> Mario Pavone, Salvatore Greco, El-Ghazali Talbi, Christian Blum, Jin-Kao Hao, Carlos A. Coello Coello, Mauricio Resende, Paola Festa, Helena Ramalhinho Lourenço, Andrea Schaerf, Vincenzo Cutello<br/><strong>Local Organizing Committee:</strong> Vincenzo Cutello, Alessio Mezzina, Salvatore Sambataro, Angelo Cavallaro<br/><strong>Publicity Chair:</strong> Alessio Mezzina<br/><strong>Program Committee:</strong> TBA"
+}
