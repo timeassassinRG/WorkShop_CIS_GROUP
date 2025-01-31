@@ -288,4 +288,41 @@ html, body {
     animation-delay: 4s;
     left: 90%;
   }
-  
+
+  #speakersCarousel-inner img {
+    width: 250px;  /* Adjust this to your desired fixed width */
+    height: 250px; /* Adjust this to your desired fixed height */
+    object-fit: cover; /* Ensures images fill the frame without distortion */
+    border-radius: 10px; /* Optional: Adds rounded corners for aesthetics */
+}
+
+#committee-content {
+  padding: 20px;
+  background-color: #222;  /* Slightly lighter background */
+  border-radius: 10px;
+  border: 1px solid #444;  /* Subtle border */
+}
+
+#committee-content h4 {
+  color: #ff6600;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #555;
+  padding-bottom: 5px;
+}
+
+#committee-content ul {
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+#committee-content ul li {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+#committee-content p {
+  font-style: italic;
+  color: #ccc;
+}

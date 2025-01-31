@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .then(response => response.json())
     .then(data => {
       document.getElementById('hero-title').textContent = data.title;
+      document.getElementById('hero-subtitle').textContent = data.subtitle;
       document.getElementById('hero-paragraph').textContent = data.paragraph;
       document.getElementById('hero-button').textContent = data.button;
     })
@@ -23,20 +24,33 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // --- AIMS & SCOPE ---
   fetch('assets/data/aimsScope.json')
-    .then(response => response.json())
-    .then(data => {
-      document.getElementById('aims-scope-title').textContent = data.title;
-      const container = document.getElementById('aims-scope-content');
+  .then(response => response.json())
+  .then(data => {
+    document.getElementById('aims-scope-title').textContent = data.title;
+    const container = document.getElementById('aims-scope-content');
 
-      // Pulisce il container e poi crea i paragrafi
-      container.innerHTML = '';
-      data.paragraphs.forEach(par => {
-        const p = document.createElement('p');
-        p.innerHTML = par; // uso innerHTML per preservare i tag <strong>, <em>, ecc.
-        container.appendChild(p);
+    // Clear existing content
+    container.innerHTML = '';
+
+    // Add paragraphs
+    data.paragraphs.forEach(par => {
+      const p = document.createElement('p');
+      p.innerHTML = par; // Use innerHTML to preserve formatting
+      container.appendChild(p);
+    });
+
+    // Create and append list if topics exist
+    if (data.topics && data.topics.length > 0) {
+      const ul = document.createElement('ul');
+      data.topics.forEach(topic => {
+        const li = document.createElement('li');
+        li.textContent = topic;
+        ul.appendChild(li);
       });
-    })
-    .catch(err => console.error("Errore aimsScope:", err));
+      container.appendChild(ul);
+    }
+  })
+  .catch(err => console.error("Error loading aimsScope:", err));
 
   // --- TOPICS & PROCEEDINGS ---
   fetch('assets/data/topicsProceedings.json')
@@ -85,30 +99,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // --- PROGRAM & SPEAKERS ---
   fetch('assets/data/programSpeakers.json')
-    .then(response => response.json())
-    .then(data => {
-      document.getElementById('program-title').textContent = data.programTitle;
-      document.getElementById('program-intro').innerHTML = data.programIntro;
-      document.getElementById('speakers-label').textContent = data.speakersLabel;
-
-      // Popolazione speaker
-      // Slide 1
-      document.getElementById('speaker1-name').textContent = data.speakers[0].name;
-      document.getElementById('speaker1-desc').textContent = data.speakers[0].description;
-      // Slide 2
-      document.getElementById('speaker2-name').textContent = data.speakers[1].name;
-      document.getElementById('speaker2-desc').textContent = data.speakers[1].description;
-      // Slide 3
-      document.getElementById('speaker3-name').textContent = data.speakers[2].name;
-      document.getElementById('speaker3-desc').textContent = data.speakers[2].description;
-      // Slide 4
-      document.getElementById('speaker4-name').textContent = data.speakers[3].name;
-      document.getElementById('speaker4-desc').textContent = data.speakers[3].description;
-
-      // Program committee
-      document.getElementById('program-committee-text').innerHTML = data.programCommitteeText;
-    })
-    .catch(err => console.error("Errore programSpeakers:", err));
+    fetch('assets/data/programSpeakers.json')
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById('program-title').textContent = data.programTitle;
+        document.getElementById('program-intro').innerHTML = data.programIntro;
+        document.getElementById('speakers-label').textContent = data.speakersLabel;
+        
+        const carouselInner = document.getElementById('speakersCarousel-inner');
+        carouselInner.innerHTML = ''; // Clear existing slides
+        
+        data.speakers.forEach((speaker, index) => {
+          const isActive = index === 0 ? 'active' : '';
+          const slide = `
+            <div class="carousel-item ${isActive} text-center">
+              <img src="${speaker.image}" class="d-block mx-auto mb-4" alt="${speaker.name}" />
+              <h5>${speaker.name}</h5>
+              <p>${speaker.description}</p>
+            </div>
+          `;
+          carouselInner.innerHTML += slide;
+        });
+      })
+      .catch(err => console.error("Error loading programSpeakers:", err));
 
   // --- CFP & CONTACTS ---
   fetch('assets/data/cfpContacts.json')
@@ -168,4 +181,54 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById('footer-link').textContent = data.footerLinkText;
     })
     .catch(err => console.error("Errore footer:", err));
+
+  // --- commitee ---
+
+  fetch("assets/data/committee.json")
+    .then(response => response.json())
+    .then(committeeData => {
+        document.getElementById('committee-title').innerText = committeeData.title;
+        let committeeSection = document.getElementById('committee-content');
+        
+        Object.entries(committeeData.sections).forEach(([title, members]) => {
+            let div = document.createElement('div');
+            div.innerHTML = `<h4>${title}</h4>`;
+
+            if (Array.isArray(members)) {
+                let ul = document.createElement('ul');
+                members.forEach(member => {
+                    let li = document.createElement('li');
+                    li.innerHTML = member; // Use innerHTML instead of innerText
+                    ul.appendChild(li);
+                });
+                div.appendChild(ul);
+            } else {
+                div.innerHTML += `<p>${members}</p>`;
+            }
+
+            committeeSection.appendChild(div);
+        });
+    })
+    .catch(err => console.error("Error loading committee data:", err));
+
+
+
+    // Fetch and Load Important Dates
+    fetch("assets/data/important-dates.json")
+    .then(response => response.json())
+    .then(datesData => {
+        document.getElementById('important-dates-title').innerText = datesData.title;
+        let datesContent = document.getElementById('important-dates-content');
+        
+        let ul = document.createElement('ul');
+        datesData.dates.forEach(dateEntry => {
+            let li = document.createElement('li');
+            li.innerHTML = `<strong>${dateEntry.event}:</strong> ${dateEntry.date}`;
+            ul.appendChild(li);
+        });
+        
+        datesContent.appendChild(ul);
+    })
+    .catch(err => console.error("Error loading important dates:", err));
+
 });

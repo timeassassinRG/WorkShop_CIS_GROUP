@@ -48,10 +48,10 @@
       ]
     },
     "proceedings": {
-      "label": "Proceedings & Special Issue",
+      "label": "Proceedings",
       "paragraphs": [
-        "Tutti gli articoli accettati saranno pubblicati nei proceedings del workshop, previsti in <em>Lecture Notes in Computer Science (LNCS)</em>. Dopo un’ulteriore fase di peer review, alcuni lavori potranno essere invitati a sottomettere una versione estesa per uno <strong>Special Issue</strong> in una rivista di prestigio.",
-        "<strong>Lecture Notes in Computer Science (LNCS)</strong><br/>Serie riconosciuta per la diffusione di ricerche d’avanguardia in ambito informatico (LNAI, LNBI, indicizzazione su CPCI, Scopus, EI Engineering Index, Google Scholar, DBLP, ecc.). <a href=\"https://www.springer.com/gp/computer-science/lncs\" target=\"_blank\">Visita Springer LNCS</a>"
+        "All accepted papers will be published in the workshop proceedings, planned for inclusion in <em>Lecture Notes in Computer Science (LNCS)</em>. After an additional peer-review phase, selected works may be invited to submit an extended version for publication in a high-impact journal.",
+        "<strong>Lecture Notes in Computer Science (LNCS)</strong><br/>A well-recognized series for disseminating cutting-edge research in computer science (LNAI, LNBI, indexed in CPCI, Scopus, EI Engineering Index, Google Scholar, DBLP, etc.). <a href=\"https://www.springer.com/gp/computer-science/lncs\" target=\"_blank\">Visit Springer LNCS</a>"
       ]
     }
   }

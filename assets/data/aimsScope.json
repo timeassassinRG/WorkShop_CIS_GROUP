@@ -1,9 +1,15 @@
 {
-    "title": "Aims & Scope",
-    "paragraphs": [
-      "<strong>The International Workshop on Big Optimization (WBO25)</strong> mira a riunire ricercatori, professionisti e stakeholder provenienti da diversi ambiti (computer science, operations research, intelligenza artificiale, matematica applicata), con l’obiettivo di affrontare le sfide legate a problemi di ottimizzazione di ampia scala e alta complessità.",
-      "Il workshop promuove la collaborazione interdisciplinare e pone una particolare enfasi sulle <em>metaeuristiche</em>, <em>heuristiche</em> e metodi ibridi, nonché sulle applicazioni in contesti di <strong>big data</strong>, problem spaces ad alta dimensionalità e domini computazionalmente costosi. I partecipanti avranno l’opportunità di approfondire gli sviluppi emergenti, condividere best practices e delineare i futuri trend di ricerca in un settore in costante evoluzione.",
-      "<strong>WBO25</strong> si propone come una piattaforma inclusiva, incoraggiando contributi che spaziano dagli aspetti teorici e algoritmici fino alle applicazioni reali, includendo anche gli aspetti implementativi. Il programma prevede sessioni tecniche, presentazioni di lavori innovativi e <em>plenary talks</em> di esperti di riconosciuta fama, al fine di favorire scambi di idee e collaborazioni tra mondo accademico e industriale."
-    ]
-  }
-  
+  "title": "Aims and Scopes",
+  "paragraphs": [
+    "The <strong>Workshop on Big Optimization (WBO25)</strong> aims to bring together researchers, practitioners, and industry experts to explore the challenges and advancements in solving large-scale, complex optimization problems. The workshop focuses on fostering collaboration across disciplines such as computer science, operations research, artificial intelligence, and applied mathematics.",
+    "The workshop particularly emphasizes innovative approaches in <strong>heuristics, metaheuristics, and hybrid methods</strong>, as well as their applications in <strong>big data optimization, high-dimensional problem spaces, and computationally expensive domains</strong>. Participants will have the opportunity to discuss emerging trends, share best practices, and identify future directions for research in this rapidly evolving field.",
+    "WBO25 is an inclusive platform, welcoming contributions that span theoretical foundations, algorithmic developments, real-world applications, and computational frameworks.",
+    "Topics of interest include, but are not limited to:"
+  ],
+  "topics": [
+    "Theoretical insights and performance analysis of optimization algorithms.",
+    "Novel applications of intelligent systems for optimization in diverse domains (e.g., logistics, healthcare, energy).",
+    "Bridging the gap between optimization theory and practical implementation.",
+    "The workshop will include plenary talks by renowned experts, technical sessions for presenting innovative research, and networking opportunities to build collaborations across academia and industry."
+  ]
+}

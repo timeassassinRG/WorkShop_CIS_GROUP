@@ -1,8 +1,10 @@
 {
-  "brand": "WBO25 - International Workshop on Big Optimization 2025",
+  "brand": "WBO25",
   "links": {
       "aimsScope": "Aims & Scope",
       "topics": "Topics",
-      "program": "Program & Speakers"
+      "program": "Program & Speakers",
+      "committee": "Committee",
+      "importantDates": "Important Dates"
   }
 }

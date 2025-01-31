@@ -52,6 +52,9 @@
             <a class="nav-link" href="#program" id="nav-program"></a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="#committee" id="nav-committee">Committee</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#cfp" id="nav-cfp"></a>
           </li>
         </ul>
@@ -63,8 +66,9 @@
   <!-- HERO -->
   <header class="hero" id="hero">
     <h1 class="fade-up" id="hero-title"></h1>
+    <h3 class="fade-up" id="hero-subtitle"></h3>
     <p class="fade-up" id="hero-paragraph" style="animation-delay: 0.2s;"></p>
-    <p class="fade-up" id="hero-dateLocation" style="animation-delay: 0.3s;"></p>
+    <p class="fade-up" id="hero-paragraphDate" style="animation-delay: 0.3s;"></p>
     <a href="#aims-scope" class="btn btn-primary btn-hero fade-up" id="hero-button" style="animation-delay: 0.4s;"></a>
   </header>
   <!-- FINE HERO -->
@@ -112,7 +116,6 @@
         <h4 id="speakers-label" style="color: #ff6600;"></h4>
         <div id="speakersCarousel" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators" id="speakersCarousel-indicators">
-            <!-- generati via JS se vuoi, o lasci statici -->
             <button 
               type="button" 
               data-bs-target="#speakersCarousel" 
@@ -126,18 +129,6 @@
               data-bs-target="#speakersCarousel" 
               data-bs-slide-to="1" 
               aria-label="Slide 2"
-            ></button>
-            <button 
-              type="button" 
-              data-bs-target="#speakersCarousel" 
-              data-bs-slide-to="2" 
-              aria-label="Slide 3"
-            ></button>
-            <button 
-              type="button" 
-              data-bs-target="#speakersCarousel" 
-              data-bs-slide-to="3" 
-              aria-label="Slide 4"
             ></button>
           </div>
           <div class="carousel-inner" id="speakersCarousel-inner">
@@ -160,26 +151,6 @@
               />
               <h5 id="speaker2-name"></h5>
               <p id="speaker2-desc"></p>
-            </div>
-            <!-- Slide 3 -->
-            <div class="carousel-item text-center">
-              <img 
-                src="assets/img/doodle.jpg"  
-                class="d-block mx-auto mb-4" 
-                alt="Speaker 3"
-              />
-              <h5 id="speaker3-name"></h5>
-              <p id="speaker3-desc"></p>
-            </div>
-            <!-- Slide 4 -->
-            <div class="carousel-item text-center">
-              <img 
-                src="assets/img/doodle.jpg"  
-                class="d-block mx-auto mb-4" 
-                alt="Speaker 4"
-              />
-              <h5 id="speaker4-name"></h5>
-              <p id="speaker4-desc"></p>
             </div>
           </div>
           <button 
@@ -210,65 +181,27 @@
     <div class="section-divider"></div>
   </section>
   
-
-  <!-- SEZIONE CfP & CONTACTS -->
-  <section id="cfp" class="fade-up">
+  <!-- SEZIONE COMMITTEE -->
+  <section id="committee" class="fade-up">
     <div class="container">
-      <h2 class="section-title" id="cfp-title"></h2>
-      <div class="row">
-        
-        <!-- CfP -->
-        <div class="col-md-6">
-          <div class="dark-card" id="cfp-content">
-            <!-- Contenuto CfP (WBO25, date, info) -->
-          </div>
+        <h2 class="section-title" id="committee-title"></h2>
+        <div class="dark-card" id="committee-content">
+            <!-- Committee details will be injected here -->
         </div>
-        
-        <!-- Contatti -->
-        <div class="col-md-6">
-          <div class="dark-card">
-            <h4 style="color: #ff6600;" id="contacts-title"></h4>
-            <p id="contacts-info"></p>
-            <p id="contacts-emailtel"></p>
-            
-            <!-- Form di contatto -->
-            <form>
-              <div class="mb-3">
-                <label for="nome" class="form-label" id="label-nome"></label>
-                <input 
-                  type="text" 
-                  class="form-control" 
-                  id="nome" 
-                  placeholder=""
-                />
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label" id="label-email"></label>
-                <input 
-                  type="email" 
-                  class="form-control" 
-                  id="email" 
-                  placeholder=""
-                />
-              </div>
-              <div class="mb-3">
-                <label for="messaggio" class="form-label" id="label-messaggio"></label>
-                <textarea 
-                  class="form-control" 
-                  id="messaggio" 
-                  rows="4" 
-                  placeholder=""
-                ></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary" id="btn-invia"></button>
-            </form>
-          </div>
-        </div>
+    </div>
+  </section>
+
+
+  <!-- IMPORTANT DATES -->
+  <section id="important-dates" class="fade-up">
+    <div class="container">
+      <h2 class="section-title" id="important-dates-title"></h2>
+      <div class="dark-card" id="important-dates-content">
+        <!-- Important Dates will be injected here -->
       </div>
     </div>
-    <div class="section-divider"></div>
   </section>
-  <!-- FINE SEZIONE CfP & CONTACTS -->
+  <!-- END IMPORTANT DATES -->
 
   <!-- FOOTER -->
   <footer>

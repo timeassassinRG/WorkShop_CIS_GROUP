@@ -1,0 +1,10 @@
+{
+    "title": "Important Dates",
+    "dates": [
+        {"event": "Paper Submission Deadline", "date": "July 15, 2025"},
+        {"event": "Notification of Acceptance", "date": "August 10, 2025"},
+        {"event": "Early Registration Deadline", "date": "August 31, 2025"},
+        {"event": "Final Paper Submission", "date": "September 10, 2025"},
+        {"event": "Workshop Date", "date": "October 15-17, 2025"}
+    ]
+}
