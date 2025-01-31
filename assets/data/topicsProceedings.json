@@ -1,10 +1,58 @@
 {
-  "topicsSectionTitle": "Topics",
-  "topics": {
-    "label": "Topics",
-    "sections": [
-      {"title": "Algorithmic Foundations", "items": ["Heuristics and metaheuristics", "Multi-objective optimization", "AI-driven optimization", "Large-scale computational methods"]},
-      {"title": "Applications of Optimization", "items": ["Energy", "Logistics", "Healthcare", "Network design"]}
-    ]
+    "topicsSectionTitle": "Topics & Proceedings",
+    "topics": {
+      "label": "Topics",
+      "sections": [
+        {
+          "title": "Algorithmic Foundations",
+          "items": [
+            "Heuristics and metaheuristics (genetic algorithms, ant colony, particle swarm, etc.)",
+            "Hybrid methods combining exact and heuristic approaches",
+            "Multi-objective optimization and trade-off analysis",
+            "Optimization under uncertainty and stochastic methods"
+          ]
+        },
+        {
+          "title": "Artificial Intelligence in Optimization",
+          "items": [
+            "Deep learning–assisted optimization",
+            "Reinforcement learning for optimization problems"
+          ]
+        },
+        {
+          "title": "Computational Techniques & Frameworks",
+          "items": [
+            "Scalable algorithms for large-scale optimization",
+            "Parallel and distributed techniques",
+            "Cloud and high-performance computing solutions"
+          ]
+        },
+        {
+          "title": "Applications of Optimization",
+          "items": [
+            "Big data analytics",
+            "Network design and communication systems",
+            "Supply chain, logistics, scheduling, and resource allocation",
+            "Energy management, smart grids, and robotics",
+            "Healthcare (drug design, hospital scheduling, etc.)"
+          ]
+        },
+        {
+          "title": "Emerging Trends",
+          "items": [
+            "Bio-inspired and nature-inspired optimization methods",
+            "Quantum computing for optimization",
+            "Sustainability and climate change"
+          ]
+        }
+      ]
+    },
+    "proceedings": {
+      "label": "Proceedings & Special Issue",
+      "paragraphs": [
+        "Tutti gli articoli accettati saranno pubblicati nei proceedings del workshop, previsti in <em>Lecture Notes in Computer Science (LNCS)</em>. Dopo un’ulteriore fase di peer review, alcuni lavori potranno essere invitati a sottomettere una versione estesa per uno <strong>Special Issue</strong> in una rivista di prestigio.",
+        "<strong>Lecture Notes in Computer Science (LNCS)</strong><br/>Serie riconosciuta per la diffusione di ricerche d’avanguardia in ambito informatico (LNAI, LNBI, indicizzazione su CPCI, Scopus, EI Engineering Index, Google Scholar, DBLP, ecc.). <a href=\"https://www.springer.com/gp/computer-science/lncs\" target=\"_blank\">Visita Springer LNCS</a>"
+      ]
+    }
   }
-}
+  
