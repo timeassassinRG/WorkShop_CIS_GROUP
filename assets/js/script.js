@@ -264,20 +264,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Assicurati che tsParticles sia caricato
 tsParticles.load("tsparticles", {
+  fullScreen: {
+    enable: true,
+    zIndex: -1  // Forza il canvas a rimanere dietro il contenuto
+  },
   fpsLimit: 60,
   particles: {
     number: {
-      value: 30,  // Regola il numero di particelle
+      value: 30,
       density: {
         enable: true,
         area: 800
       }
     },
     color: {
-      value: "#ff6600" // Colore delle particelle
+      value: "#ff6600"
     },
     shape: {
-      type: "circle"  // Puoi provare anche "edge", "triangle", "polygon", "star"
+      type: "circle"
     },
     opacity: {
       value: 0.8,
@@ -303,11 +307,11 @@ tsParticles.load("tsparticles", {
     events: {
       onHover: {
         enable: true,
-        mode: "repulse"  // Le particelle si spostano lontano dal cursore
+        mode: "repulse"
       },
       onClick: {
         enable: true,
-        mode: "push"     // Aggiunge particelle al click
+        mode: "push"
       },
       resize: true
     },

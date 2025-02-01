@@ -1,317 +1,330 @@
 /* ---------------------------------------------------------
-   TEMA DARK & STRUTTURA GENERALE
+   TEMA DARK & RESET GLOBALE
 --------------------------------------------------------- */
 html, body {
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth; /* scrolling morbido */
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+}
+
+/* ---------------------------------------------------------
+   POSIZIONAMENTO DEI CONTENUTI (NAVBAR, HERO, SEZIONI, FOOTER)
+   (tutti posti sopra i particles)
+--------------------------------------------------------- */
+.navbar, .hero, section, footer {
+  position: relative;
+  z-index: 1000;
+}
+
+/* ---------------------------------------------------------
+   NAVBAR
+--------------------------------------------------------- */
+.navbar {
+  background-color: #000000 !important; /* Opaque */
+  z-index: 1000;
+}
+.navbar-dark .navbar-brand {
+  color: #ff6600;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #ff6600;
+}
+
+/* ---------------------------------------------------------
+   BOTTONI
+--------------------------------------------------------- */
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+  background-color: #ff6600 !important;
+  border-color: #ff6600 !important;
+}
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:active,
+.btn-secondary:focus {
+  background-color: #333333 !important;
+  border-color: #444444 !important;
+  color: #ff6600 !important;
+}
+
+/* ---------------------------------------------------------
+   HERO CON PARALLAX
+--------------------------------------------------------- */
+.hero {
+  position: relative;
+  z-index: 3; /* sopra i particles */
+  height: 100vh;
+  /* Overlay semi-trasparente per oscurare le particelle */
+  background: linear-gradient(
+      rgba(18,18,18,0.7),
+      rgba(18,18,18,0.7)
+    ),
+    url('../img/hero.webp');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+.hero p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
+  line-height: 1.5;
+}
+.hero .btn-hero {
+  font-size: 1.1rem;
+  padding: 0.75rem 2rem;
+}
+
+/* ---------------------------------------------------------
+   SEZIONI E CARD
+--------------------------------------------------------- */
+section {
+  padding: 2rem 1rem;
+}
+h2.section-title {
+  color: #ff6600;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2rem;
+}
+.dark-card {
+  background-color: #1f1f1f;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* ---------------------------------------------------------
+   SHAPE DIVIDER (opzionale)
+--------------------------------------------------------- */
+.section-divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  /* background: url('../img/wave-divider.svg') no-repeat center; */
+  background-size: cover;
+}
+
+/* ---------------------------------------------------------
+   CAROUSEL
+--------------------------------------------------------- */
+.carousel-item img {
+  max-height: 400px;
+  object-fit: cover;
+}
+.carousel-indicators {
+  bottom: -20px;
+}
+.carousel-inner {
+  margin-bottom: 2rem;
+}
+
+/* ---------------------------------------------------------
+   FORM
+--------------------------------------------------------- */
+.form-control {
+  background-color: #222;
+  border: 1px solid #444;
+  color: #fff;
+}
+.form-control:focus {
+  box-shadow: none;
+  border-color: #ff6600;
+}
+
+/* ---------------------------------------------------------
+   FOOTER
+--------------------------------------------------------- */
+footer {
+  background-color: #1c1c1c;
+  padding: 2rem 0;
+}
+footer a {
+  color: #ff6600;
+}
+
+/* ---------------------------------------------------------
+   ANIMAZIONI
+--------------------------------------------------------- */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
   }
-  
-  body {
-    background-color: #121212;  /* sfondo scuro */
-    color: #ffffff;             /* testo chiaro */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    overflow-x: hidden;         /* Nasconde eventuale scrollbar orizzontale */
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  /* Alza z-index di navbar, sezioni e footer davanti alle palline */
-  .navbar, .hero, section, footer {
-    position: relative;
-    z-index: 1000;
-  }
-  .navbar {
-    background-color: #000000 !important; /* Colore opaco per la navbar */
-    z-index: 1000; /* Assicurati che rimanga sopra i particles */
-  }
-  a, a:hover {
-    text-decoration: none;
-  }
-  
-  /* Navbar scura con accenti arancioni */
-  .navbar-dark .navbar-brand {
-    color: #ff6600; 
-  }
-  .navbar-dark .navbar-nav .nav-link {
-    color: #ffffff;
-    transition: color 0.3s ease;
-  }
-  .navbar-dark .navbar-nav .nav-link:hover {
-    color: #ff6600;
-  }
-  
-  /* Bottoni con sfumature arancioni */
-  .btn-primary,
-  .btn-primary:hover,
-  .btn-primary:active,
-  .btn-primary:focus {
-    background-color: #ff6600 !important;
-    border-color: #ff6600 !important;
-  }
-  .btn-secondary,
-  .btn-secondary:hover,
-  .btn-secondary:active,
-  .btn-secondary:focus {
-    background-color: #333333 !important; 
-    border-color: #444444 !important;
-    color: #ff6600 !important;
-  }
-  
-  /* ---------------------------------------------------------
-     HERO CON PARALLAX
-  --------------------------------------------------------- */
-  .hero {
-    position: relative;
-    z-index: 3; /* Solleva l'hero sopra i particles */
-    height: 100vh;
-    /* Usa un gradiente semi-trasparente per far trasparire l'immagine */
-    background: linear-gradient(
-        rgba(18,18,18,0.7),  /* 70% opaco */
-        rgba(18,18,18,0.7)
-      ),
-      url('../img/hero.webp');
-    background-attachment: fixed; /* parallax */
-    background-position: center;
-    background-size: cover;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0 1rem;
-  }
-  .hero h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    letter-spacing: 1px;
-  }
-  .hero p {
-    font-size: 1.2rem;
-    max-width: 800px;
-    margin: 0 auto 1.5rem auto;
-    line-height: 1.5;
-  }
-  .hero .btn-hero {
-    font-size: 1.1rem;
-    padding: 0.75rem 2rem;
-  }
-  
-  /* ---------------------------------------------------------
-     SEZIONI E CARD
-  --------------------------------------------------------- */
-  section {
-    padding: 2rem 1rem; /* Reduce vertical padding */
-  }
-  h2.section-title {
-    color: #ff6600;
-    font-weight: 700;
-    margin-bottom: 2rem;
-    text-align: center;
-    font-size: 2rem;
-  }
-  .dark-card {
-    background-color: #1f1f1f;
-    border-radius: 0.5rem;
-    padding: 2rem;
-    margin-bottom: 2rem;
-  }
-  
-  /* ---------------------------------------------------------
-     SHAPE DIVIDER (opzionale) - wave al fondo sezione
-  --------------------------------------------------------- */
-  .section-divider {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 40px;
-    /*background: url('../img/wave-divider.svg') no-repeat center; */
-    background-size: cover;
-  }
-  
-  /* ---------------------------------------------------------
-     CAROUSEL
-  --------------------------------------------------------- */
-  .carousel-item img {
-    max-height: 400px;
-    object-fit: cover;
-  }
-  .carousel-indicators {
-    bottom: -20px; /* sposta i pallini più giù per non sovrapporli al testo */
-  }
-  .carousel-inner {
-    margin-bottom: 2rem; /* lascia spazio per indicatori */
-  }
-  
-  /* ---------------------------------------------------------
-     FORM SCURI
-  --------------------------------------------------------- */
-  .form-control {
-    background-color: #222;
-    border: 1px solid #444;
-    color: #fff;
-  }
-  .form-control:focus {
-    box-shadow: none;
-    border-color: #ff6600;
-  }
-  
-  /* ---------------------------------------------------------
-     FOOTER
-  --------------------------------------------------------- */
-  footer {
-    background-color: #1c1c1c;
-    padding: 2rem 0;
-  }
-  footer a {
-    color: #ff6600;
-  }
-  
-  /* ---------------------------------------------------------
-     ANIMAZIONI
-  --------------------------------------------------------- */
-  @keyframes fadeInUp {
-    0% {
-      opacity: 0;
-      transform: translateY(50px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  .fade-up {
-    opacity: 0; /* inizialmente invisibile */
-    animation: fadeInUp 1s ease forwards; /* 1s di animazione, poi resta in place */
-    /* di default parte subito; per abilitarla su scroll,
-       vedi IntersectionObserver in script.js */
-  }
-  
-  /* ---------------------------------------------------------
-     PALLINE (DOT) ANIMATE
-  --------------------------------------------------------- */
-  .particles {
-    position: fixed;       /* segue la viewport */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;  /* non interferisce con i click */
-    overflow: hidden;      /* nasconde i pallini che escono dai bordi */
-    z-index: 1;            /* sotto i contenuti (z-index=2) */
-  }
-  
-  /* Stile base di un pallino */
+}
+.fade-up {
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* ---------------------------------------------------------
+   PARTICLES (tsParticles)
+--------------------------------------------------------- */
+/* Il container dei particles è gestito dalla libreria con fullScreen,
+   quindi qui basta assicurarsi che sia posizionato dietro tutto */
+#tsparticles {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* ---------------------------------------------------------
+   PARTICLES - (Fallback per custom dots, se necessario)
+--------------------------------------------------------- */
+.particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 1;
+}
 .dot {
   position: absolute;
-  bottom: -50px;     /* parte sotto lo schermo */
+  bottom: -50px;
   width: 20px;
   height: 20px;
   background-color: #ff6600;
   border-radius: 50%;
   opacity: 0;
   animation: moveDot 10s linear infinite;
-  /* Forza l'accelerazione hardware per evitare ricalcoli layout */
   will-change: transform, opacity;
   backface-visibility: hidden;
   transform: translateZ(0);
 }
-
-  
-  /* Keyframes di base */
-  @keyframes moveDot {
-    0% {
-      transform: translate(0, 0) scale(0.5);
-      opacity: 0.0;
-    }
-    20% {
-      opacity: 0.7;
-    }
-    50% {
-      opacity: 0.5;
-    }
-    80% {
-      opacity: 0.7;
-    }
-    100% {
-      transform: translate(120vw, -120vh) scale(1.2);
-      opacity: 0.0;
-    }
+@keyframes moveDot {
+  0% {
+    transform: translate(0, 0) scale(0.5);
+    opacity: 0;
   }
-  
-  /* Classi singole per variare dimensioni, delay, e partenza orizzontale */
-  .dot-1 {
-    width: 25px;
-    height: 25px;
-    animation-duration: 12s;
-    animation-delay: 0s;
-    left: 5%;
+  20% {
+    opacity: 0.7;
   }
-  .dot-2 {
-    width: 15px;
-    height: 15px;
-    animation-duration: 8s;
-    animation-delay: 2s;
-    left: 15%;
+  50% {
+    opacity: 0.5;
   }
-  .dot-3 {
-    width: 40px;
-    height: 40px;
-    animation-duration: 14s;
-    animation-delay: 4s;
-    left: 30%;
+  80% {
+    opacity: 0.7;
   }
-  .dot-4 {
-    width: 10px;
-    height: 10px;
-    animation-duration: 9s;
-    animation-delay: 6s;
-    left: 45%;
+  100% {
+    transform: translate(120vw, -120vh) scale(1.2);
+    opacity: 0;
   }
-  .dot-5 {
-    width: 30px;
-    height: 30px;
-    animation-duration: 11s;
-    animation-delay: 1s;
-    left: 60%;
-  }
-  .dot-6 {
-    width: 20px;
-    height: 20px;
-    animation-duration: 10s;
-    animation-delay: 3s;
-    left: 75%;
-  }
-  .dot-7 {
-    width: 50px;
-    height: 50px;
-    animation-duration: 16s;
-    animation-delay: 5s;
-    left: 85%;
-  }
-  .dot-8 {
-    width: 15px;
-    height: 15px;
-    animation-duration: 8s;
-    animation-delay: 4s;
-    left: 90%;
-  }
-
-  #speakersCarousel-inner img {
-    width: 250px;  /* Adjust this to your desired fixed width */
-    height: 250px; /* Adjust this to your desired fixed height */
-    object-fit: cover; /* Ensures images fill the frame without distortion */
-    border-radius: 10px; /* Optional: Adds rounded corners for aesthetics */
+}
+.dot-1 {
+  width: 25px;
+  height: 25px;
+  animation-duration: 12s;
+  animation-delay: 0s;
+  left: 5%;
+}
+.dot-2 {
+  width: 15px;
+  height: 15px;
+  animation-duration: 8s;
+  animation-delay: 2s;
+  left: 15%;
+}
+.dot-3 {
+  width: 40px;
+  height: 40px;
+  animation-duration: 14s;
+  animation-delay: 4s;
+  left: 30%;
+}
+.dot-4 {
+  width: 10px;
+  height: 10px;
+  animation-duration: 9s;
+  animation-delay: 6s;
+  left: 45%;
+}
+.dot-5 {
+  width: 30px;
+  height: 30px;
+  animation-duration: 11s;
+  animation-delay: 1s;
+  left: 60%;
+}
+.dot-6 {
+  width: 20px;
+  height: 20px;
+  animation-duration: 10s;
+  animation-delay: 3s;
+  left: 75%;
+}
+.dot-7 {
+  width: 50px;
+  height: 50px;
+  animation-duration: 16s;
+  animation-delay: 5s;
+  left: 85%;
+}
+.dot-8 {
+  width: 15px;
+  height: 15px;
+  animation-duration: 8s;
+  animation-delay: 4s;
+  left: 90%;
 }
 
+/* ---------------------------------------------------------
+   SPEAKERS CAROUSEL
+--------------------------------------------------------- */
+#speakersCarousel-inner img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* ---------------------------------------------------------
+   COMMITTEE SECTION
+--------------------------------------------------------- */
 #committee-content {
   padding: 20px;
-  background-color: #222;  /* Slightly lighter background */
+  background-color: #222;
   border-radius: 10px;
-  border: 1px solid #444;  /* Subtle border */
+  border: 1px solid #444;
 }
-
 #committee-content h4 {
   color: #ff6600;
   font-weight: bold;
@@ -320,24 +333,22 @@ html, body {
   border-bottom: 1px solid #555;
   padding-bottom: 5px;
 }
-
 #committee-content ul {
   padding-left: 20px;
   margin-bottom: 15px;
 }
-
 #committee-content ul li {
   font-size: 1rem;
   line-height: 1.6;
 }
-
 #committee-content p {
   font-style: italic;
   color: #ccc;
 }
 
-/* Style for the Program Schedule section, matching the Committee style */
-/* Style the main title of the Program Schedule section */
+/* ---------------------------------------------------------
+   PROGRAM SCHEDULE SECTION
+--------------------------------------------------------- */
 #program-schedule-content h3 {
   color: #ff6600;
   font-weight: bold;
@@ -345,66 +356,43 @@ html, body {
   border-bottom: 1px solid #555;
   padding-bottom: 5px;
 }
-
-/* Style each day header (e.g., "31 July 2025", "1 August 2025") */
 #program-schedule-content h4 {
   color: #ff6600;
   font-weight: bold;
-  margin-top: 30px;  /* Increased spacing above each day header */
+  margin-top: 30px;
   margin-bottom: 10px;
   border-bottom: 1px solid #555;
   padding-bottom: 5px;
 }
-
-/* Add some margin to the unordered list of events */
 #program-schedule-content ul {
   margin-top: 10px;
 }
-
-/* Add a bit of spacing between list items (events) */
 #program-schedule-content li {
   margin-bottom: 8px;
 }
 
-/* Container to arrange venue images in a row */
+/* ---------------------------------------------------------
+   VENUE SECTION
+--------------------------------------------------------- */
+/* Venue Images */
 .venue-images {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 10px; /* optional: adds a 10px gap between images */
+  gap: 10px;
 }
-
-/* Each image takes approximately one-third of the container's width */
-.venue-images img {
-  width: calc(33.33% - 10px); /* adjust if you change the gap */
-  height: auto;
-  object-fit: cover;
-}
-
-/* Container to arrange venue images in a row */
-.venue-images {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 10px; /* gap between images */
-}
-
-/* Each image takes approximately one-third of the container's width */
 .venue-images img {
   width: calc(33.33% - 10px);
   height: auto;
   object-fit: cover;
 }
-
 /* Responsive Map Container */
 .map-responsive {
   overflow: hidden;
-  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  padding-bottom: 56.25%;
   position: relative;
   height: 0;
 }
-
-/* Make the iframe fill its container */
 .map-responsive iframe {
   position: absolute;
   top: 0;
@@ -413,19 +401,7 @@ html, body {
   height: 100%;
   border: 0;
 }
-
-/* Optional: Retain existing styling for the venue map container */
 .venue-map {
   margin-top: 20px;
   text-align: center;
-}
-
-#tsparticles {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;         /* Assicurati che sia sotto il contenuto principale */
-  pointer-events: none; /* Così non interferisce con l'interazione utente */
 }
