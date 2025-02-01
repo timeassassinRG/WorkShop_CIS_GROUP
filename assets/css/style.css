@@ -17,9 +17,12 @@ html, body {
   /* Alza z-index di navbar, sezioni e footer davanti alle palline */
   .navbar, .hero, section, footer {
     position: relative;
-    z-index: 2;
+    z-index: 1000;
   }
-  
+  .navbar {
+    background-color: #000000 !important; /* Colore opaco per la navbar */
+    z-index: 1000; /* Assicurati che rimanga sopra i particles */
+  }
   a, a:hover {
     text-decoration: none;
   }
@@ -58,12 +61,14 @@ html, body {
   --------------------------------------------------------- */
   .hero {
     position: relative;
+    z-index: 3; /* Solleva l'hero sopra i particles */
     height: 100vh;
+    /* Usa un gradiente semi-trasparente per far trasparire l'immagine */
     background: linear-gradient(
-      rgba(18,18,18,0.7), 
-      rgba(18,18,18,0.7)
-    ),
-    url('../img/hero.webp');
+        rgba(18,18,18,0.7),  /* 70% opaco */
+        rgba(18,18,18,0.7)
+      ),
+      url('../img/hero.webp');
     background-attachment: fixed; /* parallax */
     background-position: center;
     background-size: cover;
