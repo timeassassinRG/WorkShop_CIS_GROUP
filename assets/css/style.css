@@ -121,7 +121,7 @@ html, body {
     left: 0;
     width: 100%;
     height: 40px;
-    background: url('../img/wave-divider.svg') no-repeat center;
+    /*background: url('../img/wave-divider.svg') no-repeat center; */
     background-size: cover;
   }
   
@@ -198,16 +198,21 @@ html, body {
   }
   
   /* Stile base di un pallino */
-  .dot {
-    position: absolute;
-    bottom: -50px;     /* parte sotto lo schermo */
-    width: 20px;
-    height: 20px;
-    background-color: #ff6600;
-    border-radius: 50%;
-    opacity: 0;
-    animation: moveDot 10s linear infinite;
-  }
+.dot {
+  position: absolute;
+  bottom: -50px;     /* parte sotto lo schermo */
+  width: 20px;
+  height: 20px;
+  background-color: #ff6600;
+  border-radius: 50%;
+  opacity: 0;
+  animation: moveDot 10s linear infinite;
+  /* Forza l'accelerazione hardware per evitare ricalcoli layout */
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
   
   /* Keyframes di base */
   @keyframes moveDot {
@@ -408,4 +413,14 @@ html, body {
 .venue-map {
   margin-top: 20px;
   text-align: center;
+}
+
+#tsparticles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;         /* Assicurati che sia sotto il contenuto principale */
+  pointer-events: none; /* Così non interferisce con l'interazione utente */
 }

@@ -261,3 +261,65 @@ document.addEventListener("DOMContentLoaded", () => {
     annoElem.textContent = new Date().getFullYear();
   }
 });
+
+// Assicurati che tsParticles sia caricato
+tsParticles.load("tsparticles", {
+  fpsLimit: 60,
+  particles: {
+    number: {
+      value: 30,  // Regola il numero di particelle
+      density: {
+        enable: true,
+        area: 800
+      }
+    },
+    color: {
+      value: "#ff6600" // Colore delle particelle
+    },
+    shape: {
+      type: "circle"  // Puoi provare anche "edge", "triangle", "polygon", "star"
+    },
+    opacity: {
+      value: 0.8,
+      random: true
+    },
+    size: {
+      value: { min: 3, max: 7 },
+      random: true
+    },
+    move: {
+      enable: true,
+      speed: 2,
+      direction: "none",
+      random: true,
+      straight: false,
+      outModes: {
+        default: "out"
+      }
+    }
+  },
+  interactivity: {
+    detectsOn: "canvas",
+    events: {
+      onHover: {
+        enable: true,
+        mode: "repulse"  // Le particelle si spostano lontano dal cursore
+      },
+      onClick: {
+        enable: true,
+        mode: "push"     // Aggiunge particelle al click
+      },
+      resize: true
+    },
+    modes: {
+      repulse: {
+        distance: 100,
+        duration: 0.4
+      },
+      push: {
+        quantity: 4
+      }
+    }
+  },
+  detectRetina: true
+});

@@ -35,5 +35,6 @@
       "messaggioPlaceholder": "Scrivi il tuo messaggio..."
     },
     "sendButton": "Invia"
-  }
+  },
+  "_comment": "cfpContacts.json" 
 }
