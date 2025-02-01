@@ -2,7 +2,7 @@
   "cfpTitle": "Call for Papers & Contacts",
   "cfpContent": {
     "title": "WBO25 – Workshop on Big Optimization",
-    "locationDate": "<strong>31 July – 1 August 2025 | Department of Mathematics and Computer Science, University of Catania, Italy</strong><br/><em>Website:</em> [insert URL if available]",
+    "locationDate": "<strong>31 July – 1 August 2025 | Department of Mathematics and Computer Science, University of Catania, Italy</strong><br/><em>Website:</em> <a href=\"web.dmi.unict.it\"> web.dmi.unict.it </a>",
     "intro": "The focus of WBO25 is on the challenges and opportunities that arise in solving large-scale and highly complex optimization problems. The workshop will feature <em>plenary talks</em>, technical sessions, and networking opportunities to foster collaboration and innovation within the scientific and industrial communities.",
     "topicsOfInterest": "<strong>Topics of Interest</strong>: heuristics and metaheuristics, large-scale optimization, AI in optimization, scalable methodologies and frameworks, and various applications in sectors such as energy, logistics, healthcare, network design, and supply chain.",
     "submissionInfo": "<strong>Submission Information</strong><br/>Proposals must be written in English and follow the workshop's formatting guidelines (available on the website). Submissions are made through the online platform: [Submission URL].",
