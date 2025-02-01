@@ -1,19 +1,34 @@
 {
     "title": "Organizing Committee",
     "sections": {
-        "General Chairs": ["Claudia Cavallaro, <em> University of Catania</em>", "Carolina Crespi, <em> University of Catania</em>", "Francesco Zito, <em> University of Catania</em>"],
-        "Scientific Committee": [
-            "Mario Pavone, <em> University of Catania</em>", "Salvatore Greco, <em> University of Catania</em>", 
-            "El-Ghazali Talbi, <em> Université de Lille </em>", "Christian Blum, <em> Artificial Intelligence Research Institute (IIIA-CSIC)</em>",
-            "Jin-Kao Hao, <em> University of Angers </em>", "Carlos A. Coello Coello, <em> CINVESTAV-IPN </em>",
-            "Mauricio Resende, <em> University of Washington </em>", "Paola Festa, <em> University of Naples Federico II </em>",
-            "Helena Ramalhinho Lourenço, <em> Universitat Pompeu Fabra </em> ",
-            "Andrea Schaerf, <em> University of Udine </em> ", "Vincenzo Cutello, <em> University of Catania</em>"
-        ],
-        "Local Organizing Committee": ["Vincenzo Cutello, <em> University of Catania</em>",
-        "Alessio Mezzina, <em> University of Catania</em>", "Salvatore Sambataro, <em> University of Catania</em>",
-        "Angelo Cavallaro, <em> University of Catania</em>"],
-        "Publicity Chair": ["Alessio Mezzina, <em> University of Catania</em>"],
-        "Program Committee": "TBA"
+      "General Chairs": [
+        "Claudia Cavallaro, <em> University of Catania</em>",
+        "Carolina Crespi, <em> University of Catania</em>",
+        "Francesco Zito, <em> University of Catania</em>"
+      ],
+      "Scientific Committee": [
+        "Mario Pavone, <em> University of Catania</em>",
+        "Salvatore Greco, <em> University of Catania</em>",
+        "El-Ghazali Talbi, <em> Université de Lille </em>",
+        "Christian Blum, <em> Artificial Intelligence Research Institute (IIIA-CSIC)</em>",
+        "Jin-Kao Hao, <em> University of Angers </em>",
+        "Carlos A. Coello Coello, <em> CINVESTAV-IPN </em>",
+        "Mauricio Resende, <em> University of Washington </em>",
+        "Paola Festa, <em> University of Naples Federico II </em>",
+        "Helena Ramalhinho Lourenço, <em> Universitat Pompeu Fabra </em>",
+        "Andrea Schaerf, <em> University of Udine </em>",
+        "Vincenzo Cutello, <em> University of Catania</em>"
+      ],
+      "Local Organizing Committee": [
+        "Vincenzo Cutello, <em> University of Catania</em>",
+        "Alessio Mezzina, <em> University of Catania</em>",
+        "Salvatore Sambataro, <em> University of Catania</em>",
+        "Angelo Cavallaro, <em> University of Catania</em>"
+      ],
+      "Publicity Chair": [
+        "Alessio Mezzina, <em> University of Catania</em>"
+      ],
+      "Program Committee": "TBA"
     }
-}
+  }
+  

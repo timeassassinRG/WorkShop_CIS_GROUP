@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <title>CIS Group Workshop</title>
+  <title>WBO25 - International Workshop on Big Optimization</title>
   
   <!-- Bootstrap CSS -->
   <link 
@@ -37,10 +37,7 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div 
-        class="collapse navbar-collapse" 
-        id="navbarNav"
-      >
+      <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
             <a class="nav-link" href="#aims-scope" id="nav-aims-scope"></a>
@@ -48,6 +45,7 @@
           <li class="nav-item">
             <a class="nav-link" href="#topics" id="nav-topics"></a>
           </li>
+          <!-- Sezione Program & Speakers esistente -->
           <li class="nav-item">
             <a class="nav-link" href="#program" id="nav-program"></a>
           </li>
@@ -56,6 +54,22 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#cfp" id="nav-cfp"></a>
+          </li>
+          <!-- Nuove sezioni -->
+          <li class="nav-item">
+            <a class="nav-link" href="#program-schedule" id="nav-program-schedule">Program Schedule</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#submission-details" id="nav-submission-details">Submission Details</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#venue" id="nav-venue">Venue</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#registration" id="nav-registration">Registration</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#important-dates" id="nav-importantDates"></a>
           </li>
         </ul>
       </div>
@@ -78,7 +92,7 @@
     <div class="container">
       <h2 class="section-title" id="aims-scope-title"></h2>
       <div class="dark-card" id="aims-scope-content">
-        <!-- par1, par2, par3 verranno iniettati in script.js -->
+        <!-- Contenuto iniettato via JS -->
       </div>
     </div>
     <div class="section-divider"></div>
@@ -88,29 +102,25 @@
   <section id="topics" class="fade-up">
     <div class="container">
       <h2 class="section-title" id="topics-title"></h2>
-
       <!-- TOPICS -->
       <div class="dark-card mb-4" id="topics-content">
-        <!-- Qui dentro verranno creati via JS i <h5> e le <ul> con i <li> -->
+        <!-- Contenuto iniettato via JS -->
       </div>
-      
       <!-- PROCEEDINGS & SPECIAL ISSUE -->
       <div class="dark-card" id="proceedings-content">
-        <!-- Testo proceedings e special issue -->
+        <!-- Contenuto iniettato via JS -->
       </div>
     </div>
     <div class="section-divider"></div>
   </section>
 
-  <!-- SEZIONE PROGRAM & SPEAKERS -->
+  <!-- SEZIONE PROGRAM & SPEAKERS (esistente) -->
   <section id="program" class="fade-up">
     <div class="container">
       <h2 class="section-title" id="program-title"></h2>
-      
       <div class="dark-card" id="program-intro">
-        <!-- Testo introduttivo -->
+        <!-- Testo introduttivo iniettato via JS -->
       </div>
-      
       <!-- Carousel per Plenary Speakers -->
       <div class="dark-card">
         <h4 id="speakers-label" style="color: #ff6600;"></h4>
@@ -132,26 +142,7 @@
             ></button>
           </div>
           <div class="carousel-inner" id="speakersCarousel-inner">
-            <!-- Slide 1 -->
-            <div class="carousel-item active text-center">
-              <img 
-                src="assets/img/doodle.jpg" 
-                class="d-block mx-auto mb-4" 
-                alt="Speaker 1"
-              />
-              <h5 id="speaker1-name"></h5>
-              <p id="speaker1-desc"></p>
-            </div>
-            <!-- Slide 2 -->
-            <div class="carousel-item text-center">
-              <img 
-                src="assets/img/doodle.jpg" 
-                class="d-block mx-auto mb-4" 
-                alt="Speaker 2"
-              />
-              <h5 id="speaker2-name"></h5>
-              <p id="speaker2-desc"></p>
-            </div>
+            <!-- I dati dei relatori saranno iniettati via JS -->
           </div>
           <button 
             class="carousel-control-prev" 
@@ -172,9 +163,8 @@
             <span class="visually-hidden">Successivo</span>
           </button>
         </div>
-        
         <p class="mt-4" id="program-committee-text">
-          <!-- Testo su Program Committee -->
+          <!-- Contenuto iniettato via JS -->
         </p>
       </div>
     </div>
@@ -184,20 +174,74 @@
   <!-- SEZIONE COMMITTEE -->
   <section id="committee" class="fade-up">
     <div class="container">
-        <h2 class="section-title" id="committee-title"></h2>
-        <div class="dark-card" id="committee-content">
-            <!-- Committee details will be injected here -->
-        </div>
+      <h2 class="section-title" id="committee-title"></h2>
+      <div class="dark-card" id="committee-content">
+        <!-- Committee details iniettati via JS -->
+      </div>
     </div>
   </section>
 
+  <!-- SEZIONE CALL FOR PAPERS -->
+  <section id="cfp" class="fade-up">
+    <div class="container">
+      <h2 class="section-title" id="cfp-title"></h2>
+      <div class="dark-card" id="cfp-content">
+        <!-- CfP content iniettato via JS -->
+      </div>
+    </div>
+    <div class="section-divider"></div>
+  </section>
 
-  <!-- IMPORTANT DATES -->
+  <!-- NUOVA SEZIONE: PROGRAM SCHEDULE -->
+  <section id="program-schedule" class="fade-up">
+    <div class="container">
+      <h2 class="section-title">Program Schedule</h2>
+      <div class="dark-card" id="program-schedule-content">
+        <!-- Program schedule iniettato via JS -->
+      </div>
+    </div>
+    <div class="section-divider"></div>
+  </section>
+
+  <!-- NUOVA SEZIONE: SUBMISSION DETAILS -->
+  <section id="submission-details" class="fade-up">
+    <div class="container">
+      <h2 class="section-title">Submission Details</h2>
+      <div class="dark-card">
+        <!-- Contenuto iniettato via JS -->
+      </div>
+    </div>
+    <div class="section-divider"></div>
+  </section>
+
+  <!-- NUOVA SEZIONE: VENUE -->
+  <section id="venue" class="fade-up">
+    <div class="container">
+      <h2 class="section-title">Venue</h2>
+      <div class="dark-card">
+        <!-- Contenuto iniettato via JS -->
+      </div>
+    </div>
+    <div class="section-divider"></div>
+  </section>
+
+  <!-- NUOVA SEZIONE: REGISTRATION -->
+  <section id="registration" class="fade-up">
+    <div class="container">
+      <h2 class="section-title">Registration</h2>
+      <div class="dark-card">
+        <!-- Contenuto iniettato via JS -->
+      </div>
+    </div>
+    <div class="section-divider"></div>
+  </section>
+
+  <!-- SEZIONE IMPORTANT DATES -->
   <section id="important-dates" class="fade-up">
     <div class="container">
       <h2 class="section-title" id="important-dates-title"></h2>
       <div class="dark-card" id="important-dates-content">
-        <!-- Important Dates will be injected here -->
+        <!-- Important Dates iniettate via JS -->
       </div>
     </div>
   </section>

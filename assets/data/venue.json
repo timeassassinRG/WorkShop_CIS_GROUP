@@ -1,0 +1,10 @@
+{
+  "title": "Venue",
+  "description": "<p>The workshop will be held at the <strong>Department of Mathematics and Computer Science, University of Catania, Italy</strong>. The venue is easily accessible by public transportation and offers ample parking facilities.</p><p>Please refer to the map below for directions.</p>",
+  "images": [
+    { "src": "assets/img/venue1.jpg", "alt": "Department Entrance" },
+    { "src": "assets/img/venue2.jpg", "alt": "Lecture Hall" },
+    { "src": "assets/img/venue3.jpg", "alt": "Campus Overview" }
+  ],
+  "mapEmbed": "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2944.484882886571!2d15.0728621!3d37.525733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1313fd24265300d1%3A0x309382016a00c167!2sDipartimento%20di%20Matematica%20e%20Informatica!5e0!3m2!1sit!2sit!4v1685465387762!5m2!1sit!2sit' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy'></iframe>"
+}

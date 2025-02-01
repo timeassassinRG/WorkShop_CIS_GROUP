@@ -1,0 +1,26 @@
+{
+  "title": "TBA, Workshop Program Schedule",
+  "days": [
+    {
+      "date": "31 July 2025",
+      "events": [
+        { "time": "09:00 - 09:30", "description": "Registration and Welcome Coffee" },
+        { "time": "09:30 - 10:30", "description": "Opening Plenary Talk" },
+        { "time": "10:45 - 12:30", "description": "Technical Sessions" },
+        { "time": "12:30 - 14:00", "description": "Lunch Break" },
+        { "time": "14:00 - 16:00", "description": "Panel Discussion" },
+        { "time": "16:15 - 18:00", "description": "Poster Session and Networking" }
+      ]
+    },
+    {
+      "date": "1 August 2025",
+      "events": [
+        { "time": "09:00 - 10:00", "description": "Keynote Speech" },
+        { "time": "10:15 - 12:00", "description": "Technical Sessions" },
+        { "time": "12:00 - 13:30", "description": "Lunch Break" },
+        { "time": "13:30 - 15:30", "description": "Workshops and Breakout Sessions" },
+        { "time": "15:45 - 17:00", "description": "Closing Remarks and Awards" }
+      ]
+    }
+  ]
+}
