@@ -262,11 +262,10 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// Assicurati che tsParticles sia caricato
 tsParticles.load("tsparticles", {
   fullScreen: {
     enable: true,
-    zIndex: -1  // Forza il canvas a rimanere dietro il contenuto
+    zIndex: -999  // Forza il canvas a rimanere sotto tutto
   },
   fpsLimit: 60,
   particles: {
@@ -326,4 +325,17 @@ tsParticles.load("tsparticles", {
     }
   },
   detectRetina: true
+}).then((container) => {
+  // Forza il canvas a essere gestito tramite GPU per evitare reflow e lo "hopping"
+  if (container && container.canvas && container.canvas.element) {
+    const canvasEl = container.canvas.element;
+    canvasEl.style.transform = "translate3d(0, 0, 0)";
+    canvasEl.style.willChange = "transform";
+    // Imposta dimensioni fisse
+    canvasEl.style.position = "fixed";
+    canvasEl.style.top = "0";
+    canvasEl.style.left = "0";
+    canvasEl.style.width = "100vw";
+    canvasEl.style.height = "100vh";
+  }
 });

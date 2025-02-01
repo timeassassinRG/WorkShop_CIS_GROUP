@@ -145,6 +145,7 @@ h2.section-title {
 }
 .carousel-inner {
   margin-bottom: 2rem;
+  min-height: 600px;
 }
 
 /* ---------------------------------------------------------
@@ -404,4 +405,17 @@ footer a {
 .venue-map {
   margin-top: 20px;
   text-align: center;
+}
+
+
+/* Container e canvas di tsParticles: forziamo un z-index molto basso */
+#tsparticles,
+#tsparticles canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -999 !important;  /* z-index molto basso per non interferire con il layout */
+  pointer-events: none;
 }
