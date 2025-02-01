@@ -5,12 +5,12 @@
   "speakers": [
     {
       "name": "El-Ghazali Talbi",
-      "description": "Full Professor in Computer Science at the University of Lille (France), and head of the optimization group of the Computer Science Laboratory (L.I.F.L.). His current research interests are in the fields of metaheuristics, parallel algorithms, multi-objective combinatorial optimization, cluster and grid computing, hybrid and cooperative optimization, and application to bioinformatics, networking, transportation, and logistics. He is the founder of the conference META (International Conference on Metaheuristics and Nature Inspired Computing), and is head of the INRIA Dolphin project dealing with robust multi-objective optimization of complex systems.",
+      "description": "Full Professor in Computer Science at the University of Lille (France), and head of the optimization group of the Computer Science Laboratory (L.I.F.L.). His current research interests are in the fields of metaheuristics, parallel algorithms, multi-objective combinatorial optimization, cluster and grid computing, hybrid and cooperative optimization, and application to bioinformatics, networking, transportation, and logistics.",
       "image": "assets/img/talbi.jpg"
     },
     {
       "name": "Helena Ramalhinho Lourenço",
-      "description": "Full Professor at the Economics and Business Department at the University Pompeu Fabra, Barcelona, Spain. She has a B.A. and Master degree in Statistics and Operations Research from the Faculty of Sciences of the University of Lisbon, Portugal, and a Ph.D. in Operations Research from Cornell University, New York, USA. She has been involved in different research projects and consulting for business firms in the area of Operations Research and Logistics. Helena has published many articles in prestigious international scientific journals, and she has presented her work at international congresses and conferences. Helena teaches at various undergraduate, master’s and PhD’s programs at UPF and other universities. She is currently the director of the Business Analytics Research Group. Her research interests include Operations Research, Scheduling, Combinatorial Optimization, Metaheuristics, Iterated Local Search, Heuristic Search Optimization, Vehicle Routing, and applications on Supply Chain Management, Logistics, Operations Management and Health Care.",
+      "description": "Full Professor at the Economics and Business Department at the University Pompeu Fabra, Barcelona, Spain. She has been involved in different research projects and consulting for business firms in the area of Operations Research and Logistics. Her research interests include Operations Research, Scheduling, Combinatorial Optimization, Metaheuristics, Iterated Local Search, Heuristic Search Optimization, Vehicle Routing, and applications on Supply Chain Management, Logistics, Operations Management and Health Care.",
       "image": "assets/img/lourenco.jpg"
     }
   ],
