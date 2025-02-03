@@ -6,21 +6,7 @@
     "intro": "The focus of WBO25 is on the challenges and opportunities that arise in solving large-scale and highly complex optimization problems. The workshop will feature <em>plenary talks</em>, technical sessions, and networking opportunities to foster collaboration and innovation within the scientific and industrial communities.",
     "topicsOfInterest": "<strong>Topics of Interest</strong>: heuristics and metaheuristics, large-scale optimization, AI in optimization, scalable methodologies and frameworks, and various applications in sectors such as energy, logistics, healthcare, network design, and supply chain.",
     "submissionInfo": "<strong>Submission Information</strong><br/>Proposals must be written in English and follow the workshop's formatting guidelines (available on the website). Submissions are made through the online platform: [Submission URL].",
-    "proceedingsInfo": "<strong>Proceedings & Special Issue</strong><br/>Accepted papers will be published in the workshop proceedings, and a selection may be considered for a Special Issue in an indexed journal.",
-    "importantDates": {
-      "label": "<strong>Important Dates</strong>",
-      "dates": [
-        "Call for Papers (CfP) Released: February 4, 2025",
-        "Paper Submission Deadline: May 15, 2025",
-        "Notification of Acceptance: June 15, 2025",
-        "Camera-Ready Papers (Pre-Workshop): July 10, 2025",
-        "Workshop Dates: July 31 – August 1, 2025",
-        "Revised Paper Submission for Post-Proceedings: September 30, 2025",
-        "Final Acceptance of Revised Papers: October 31, 2025",
-        "Camera-Ready Papers (Post-Proceedings): November 15, 2025",
-        "Publication of Proceedings: December 2025 - January 2026"
-      ]
-    }
+    "proceedingsInfo": "<strong>Proceedings & Special Issue</strong><br/>Accepted papers will be published in the workshop proceedings, and a selection may be considered for a Special Issue in an indexed journal."
   },
   "contacts": {
     "title": "Contacts",
