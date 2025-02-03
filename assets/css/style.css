@@ -1,416 +1,416 @@
 /* ---------------------------------------------------------
-     RESET & BASE
-  --------------------------------------------------------- */
-  html, body {
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-  }
-  body {
-    background-color: #121212;
-    color: #ffffff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    overflow-x: hidden;
-  }
+   RESET & BASE
+--------------------------------------------------------- */
+html, body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+}
 
-  /* Z-index dei contenuti principali sopra tsParticles */
-  .navbar, .hero, section, footer {
-    position: relative;
-    z-index: 1000;
-  }
+/* Z-index dei contenuti principali sopra tsParticles */
+.navbar, .hero, section, footer {
+  position: relative;
+  z-index: 1000;
+}
 
-  /* ---------------------------------------------------------
-     NAVBAR
-  --------------------------------------------------------- */
-  .navbar {
-    background-color: #000000 !important; /* Opaque */
-    z-index: 1000;
-  }
-  .navbar-dark .navbar-brand {
-    color: #ff6600;
-  }
-  .navbar-dark .navbar-nav .nav-link {
-    color: #ffffff;
-    transition: color 0.3s ease;
-  }
-  .navbar-dark .navbar-nav .nav-link:hover {
-    color: #ff6600;
-  }
+/* ---------------------------------------------------------
+   NAVBAR
+--------------------------------------------------------- */
+.navbar {
+  background-color: #000000 !important; /* Opaque */
+  z-index: 1000;
+}
+.navbar-dark .navbar-brand {
+  color: #ff6600;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #ff6600;
+}
 
-  /* ---------------------------------------------------------
-     BOTTONI
-  --------------------------------------------------------- */
-  .btn-primary,
-  .btn-primary:hover,
-  .btn-primary:active,
-  .btn-primary:focus {
-    background-color: #ff6600 !important;
-    border-color: #ff6600 !important;
-  }
-  .btn-secondary,
-  .btn-secondary:hover,
-  .btn-secondary:active,
-  .btn-secondary:focus {
-    background-color: #333333 !important;
-    border-color: #444444 !important;
-    color: #ff6600 !important;
-  }
+/* ---------------------------------------------------------
+   BOTTONI
+--------------------------------------------------------- */
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+  background-color: #ff6600 !important;
+  border-color: #ff6600 !important;
+}
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:active,
+.btn-secondary:focus {
+  background-color: #333333 !important;
+  border-color: #444444 !important;
+  color: #ff6600 !important;
+}
 
-  /* ---------------------------------------------------------
-     HERO con CAROUSEL
-  --------------------------------------------------------- */
-  .hero {
-    position: relative;
-    height: 100vh;     /* full viewport height */
-    overflow: hidden;
-  }
+/* ---------------------------------------------------------
+   HERO con CAROUSEL
+--------------------------------------------------------- */
+.hero {
+  position: relative;
+  height: 100vh;     /* full viewport height */
+  overflow: hidden;
+}
 
-  /* Sovrascrivo l’altezza minima del carosello */
-  .carousel-inner {
-    margin-bottom: 2rem;
-    min-height: auto !important; 
-  }
+/* Sovrascrivo l’altezza minima del carosello */
+.carousel-inner {
+  margin-bottom: 2rem;
+  min-height: 450px !important; 
+}
 
-  /* Ogni slide riempie l’intero hero */
-  .hero .carousel-item {
-    height: 100vh; 
-  }
+/* Ogni slide riempie l’intero hero */
+.hero .carousel-item {
+  height: 100vh; 
+}
 
-  .hero .carousel-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Riempi in modo proporzionato */
-  }
+.hero .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Riempi in modo proporzionato */
+}
 
-  /* Overlay per il testo sopra il carousel */
-  .hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(18,18,18,0.7), rgba(18,18,18,0.7));
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0 1rem;
-    color: #fff;
-  }
+/* Overlay per il testo sopra il carousel */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(18,18,18,0.7), rgba(18,18,18,0.7));
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+  color: #fff;
+}
 
-  /* ---------------------------------------------------------
-     SEZIONI E CARD
-  --------------------------------------------------------- */
-  section {
-    padding: 2rem 1rem;
-  }
-  h2.section-title {
-    color: #ff6600;
-    font-weight: 700;
-    margin-bottom: 2rem;
-    text-align: center;
-    font-size: 2rem;
-  }
-  .dark-card {
-    background-color: #1f1f1f;
-    border-radius: 0.5rem;
-    padding: 2rem;
-    margin-bottom: 2rem;
-  }
+/* ---------------------------------------------------------
+   SEZIONI E CARD
+--------------------------------------------------------- */
+section {
+  padding: 2rem 1rem;
+}
+h2.section-title {
+  color: #ff6600;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2rem;
+}
+.dark-card {
+  background-color: #1f1f1f;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
 
-  /* ---------------------------------------------------------
-     FORME DIVIDER (opzionale)
-  --------------------------------------------------------- */
-  .section-divider {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 40px;
-    background-size: cover;
-  }
+/* ---------------------------------------------------------
+   FORME DIVIDER (opzionale)
+--------------------------------------------------------- */
+.section-divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-size: cover;
+}
 
-  /* ---------------------------------------------------------
-     CAROUSEL GENERICO
-  --------------------------------------------------------- */
-  .carousel-item img {
-    object-fit: cover;
-  }
-  .carousel-indicators {
-    bottom: -20px;
-  }
-  /* .carousel-inner {
-    margin-bottom: 2rem;
-    min-height: 600px;  <-- RIMOSSO o sovrascritto
-  } */
+/* ---------------------------------------------------------
+   CAROUSEL GENERICO
+--------------------------------------------------------- */
+.carousel-item img {
+  object-fit: cover;
+}
+.carousel-indicators {
+  bottom: -20px;
+}
+/* .carousel-inner {
+  margin-bottom: 2rem;
+  min-height: 600px;  
+} */
 
-  /* ---------------------------------------------------------
-     FORM
-  --------------------------------------------------------- */
-  .form-control {
-    background-color: #222;
-    border: 1px solid #444;
-    color: #fff;
-  }
-  .form-control:focus {
-    box-shadow: none;
-    border-color: #ff6600;
-  }
+/* ---------------------------------------------------------
+   FORM
+--------------------------------------------------------- */
+.form-control {
+  background-color: #222;
+  border: 1px solid #444;
+  color: #fff;
+}
+.form-control:focus {
+  box-shadow: none;
+  border-color: #ff6600;
+}
 
-  /* ---------------------------------------------------------
-     FOOTER
-  --------------------------------------------------------- */
-  footer {
-    background-color: #1c1c1c;
-    padding: 2rem 0;
-  }
-  footer a {
-    color: #ff6600;
-  }
+/* ---------------------------------------------------------
+   FOOTER
+--------------------------------------------------------- */
+footer {
+  background-color: #1c1c1c;
+  padding: 2rem 0;
+}
+footer a {
+  color: #ff6600;
+}
 
-  /* ---------------------------------------------------------
-     ANIMAZIONI
-  --------------------------------------------------------- */
-  @keyframes fadeInUp {
-    0% {
-      opacity: 0;
-      transform: translateY(50px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  .fade-up {
+/* ---------------------------------------------------------
+   ANIMAZIONI
+--------------------------------------------------------- */
+@keyframes fadeInUp {
+  0% {
     opacity: 0;
-    animation: fadeInUp 1s ease forwards;
+    transform: translateY(50px);
   }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-up {
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+}
 
-  /* ---------------------------------------------------------
-     PARTICLES (tsParticles)
-  --------------------------------------------------------- */
-  #tsparticles {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    pointer-events: none;
-  }
+/* ---------------------------------------------------------
+   PARTICLES (tsParticles)
+--------------------------------------------------------- */
+#tsparticles {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  pointer-events: none;
+}
 
-  /* ---------------------------------------------------------
-     Dots Fallback (se necessario)
-  --------------------------------------------------------- */
-  .particles {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    overflow: hidden;
-    z-index: 1;
-  }
-  .dot {
-    position: absolute;
-    bottom: -50px;
-    width: 20px;
-    height: 20px;
-    background-color: #ff6600;
-    border-radius: 50%;
+/* ---------------------------------------------------------
+   Dots Fallback (se necessario)
+--------------------------------------------------------- */
+.particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 1;
+}
+.dot {
+  position: absolute;
+  bottom: -50px;
+  width: 20px;
+  height: 20px;
+  background-color: #ff6600;
+  border-radius: 50%;
+  opacity: 0;
+  animation: moveDot 10s linear infinite;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+@keyframes moveDot {
+  0% {
+    transform: translate(0, 0) scale(0.5);
     opacity: 0;
-    animation: moveDot 10s linear infinite;
-    will-change: transform, opacity;
-    backface-visibility: hidden;
-    transform: translateZ(0);
   }
-  @keyframes moveDot {
-    0% {
-      transform: translate(0, 0) scale(0.5);
-      opacity: 0;
-    }
-    20% {
-      opacity: 0.7;
-    }
-    50% {
-      opacity: 0.5;
-    }
-    80% {
-      opacity: 0.7;
-    }
-    100% {
-      transform: translate(120vw, -120vh) scale(1.2);
-      opacity: 0;
-    }
+  20% {
+    opacity: 0.7;
   }
-  .dot-1 {
-    width: 25px;
-    height: 25px;
-    animation-duration: 12s;
-    animation-delay: 0s;
-    left: 5%;
+  50% {
+    opacity: 0.5;
   }
-  .dot-2 {
-    width: 15px;
-    height: 15px;
-    animation-duration: 8s;
-    animation-delay: 2s;
-    left: 15%;
+  80% {
+    opacity: 0.7;
   }
-  .dot-3 {
-    width: 40px;
-    height: 40px;
-    animation-duration: 14s;
-    animation-delay: 4s;
-    left: 30%;
+  100% {
+    transform: translate(120vw, -120vh) scale(1.2);
+    opacity: 0;
   }
-  .dot-4 {
-    width: 10px;
-    height: 10px;
-    animation-duration: 9s;
-    animation-delay: 6s;
-    left: 45%;
-  }
-  .dot-5 {
-    width: 30px;
-    height: 30px;
-    animation-duration: 11s;
-    animation-delay: 1s;
-    left: 60%;
-  }
-  .dot-6 {
-    width: 20px;
-    height: 20px;
-    animation-duration: 10s;
-    animation-delay: 3s;
-    left: 75%;
-  }
-  .dot-7 {
-    width: 50px;
-    height: 50px;
-    animation-duration: 16s;
-    animation-delay: 5s;
-    left: 85%;
-  }
-  .dot-8 {
-    width: 15px;
-    height: 15px;
-    animation-duration: 8s;
-    animation-delay: 4s;
-    left: 90%;
-  }
+}
+.dot-1 {
+  width: 25px;
+  height: 25px;
+  animation-duration: 12s;
+  animation-delay: 0s;
+  left: 5%;
+}
+.dot-2 {
+  width: 15px;
+  height: 15px;
+  animation-duration: 8s;
+  animation-delay: 2s;
+  left: 15%;
+}
+.dot-3 {
+  width: 40px;
+  height: 40px;
+  animation-duration: 14s;
+  animation-delay: 4s;
+  left: 30%;
+}
+.dot-4 {
+  width: 10px;
+  height: 10px;
+  animation-duration: 9s;
+  animation-delay: 6s;
+  left: 45%;
+}
+.dot-5 {
+  width: 30px;
+  height: 30px;
+  animation-duration: 11s;
+  animation-delay: 1s;
+  left: 60%;
+}
+.dot-6 {
+  width: 20px;
+  height: 20px;
+  animation-duration: 10s;
+  animation-delay: 3s;
+  left: 75%;
+}
+.dot-7 {
+  width: 50px;
+  height: 50px;
+  animation-duration: 16s;
+  animation-delay: 5s;
+  left: 85%;
+}
+.dot-8 {
+  width: 15px;
+  height: 15px;
+  animation-duration: 8s;
+  animation-delay: 4s;
+  left: 90%;
+}
 
-  /* ---------------------------------------------------------
-     SPEAKERS CAROUSEL
-  --------------------------------------------------------- */
-  #speakersCarousel-inner img {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 10px;
-  }
+/* ---------------------------------------------------------
+   SPEAKERS CAROUSEL
+--------------------------------------------------------- */
+#speakersCarousel-inner img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
 
-  /* ---------------------------------------------------------
-     COMMITTEE SECTION
-  --------------------------------------------------------- */
-  #committee-content {
-    padding: 20px;
-    background-color: #222;
-    border-radius: 10px;
-    border: 1px solid #444;
-  }
-  #committee-content h4 {
-    color: #ff6600;
-    font-weight: bold;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    border-bottom: 1px solid #555;
-    padding-bottom: 5px;
-  }
-  #committee-content ul {
-    padding-left: 20px;
-    margin-bottom: 15px;
-  }
-  #committee-content ul li {
-    font-size: 1rem;
-    line-height: 1.6;
-  }
-  #committee-content p {
-    font-style: italic;
-    color: #ccc;
-  }
+/* ---------------------------------------------------------
+   COMMITTEE SECTION
+--------------------------------------------------------- */
+#committee-content {
+  padding: 20px;
+  background-color: #222;
+  border-radius: 10px;
+  border: 1px solid #444;
+}
+#committee-content h4 {
+  color: #ff6600;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #555;
+  padding-bottom: 5px;
+}
+#committee-content ul {
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+#committee-content ul li {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+#committee-content p {
+  font-style: italic;
+  color: #ccc;
+}
 
-  /* ---------------------------------------------------------
-     PROGRAM SCHEDULE SECTION
-  --------------------------------------------------------- */
-  #program-schedule-content h3 {
-    color: #ff6600;
-    font-weight: bold;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #555;
-    padding-bottom: 5px;
-  }
-  #program-schedule-content h4 {
-    color: #ff6600;
-    font-weight: bold;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    border-bottom: 1px solid #555;
-    padding-bottom: 5px;
-  }
-  #program-schedule-content ul {
-    margin-top: 10px;
-  }
-  #program-schedule-content li {
-    margin-bottom: 8px;
-  }
+/* ---------------------------------------------------------
+   PROGRAM SCHEDULE SECTION
+--------------------------------------------------------- */
+#program-schedule-content h3 {
+  color: #ff6600;
+  font-weight: bold;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #555;
+  padding-bottom: 5px;
+}
+#program-schedule-content h4 {
+  color: #ff6600;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #555;
+  padding-bottom: 5px;
+}
+#program-schedule-content ul {
+  margin-top: 10px;
+}
+#program-schedule-content li {
+  margin-bottom: 8px;
+}
 
-  /* ---------------------------------------------------------
-     VENUE SECTION
-  --------------------------------------------------------- */
-  .venue-images {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-  .venue-images img {
-    width: calc(33.33% - 10px);
-    height: auto;
-    object-fit: cover;
-  }
-  .map-responsive {
-    overflow: hidden;
-    padding-bottom: 56.25%;
-    position: relative;
-    height: 0;
-  }
-  .map-responsive iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-  }
-  .venue-map {
-    margin-top: 20px;
-    text-align: center;
-  }
+/* ---------------------------------------------------------
+   VENUE SECTION
+--------------------------------------------------------- */
+.venue-images {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.venue-images img {
+  width: calc(33.33% - 10px);
+  height: auto;
+  object-fit: cover;
+}
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+.map-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.venue-map {
+  margin-top: 20px;
+  text-align: center;
+}
 
-  /* ---------------------------------------------------------
-     tsParticles canvas fix
-  --------------------------------------------------------- */
-  #tsparticles,
-  #tsparticles canvas {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: -999 !important;
-    pointer-events: none;
-  }
+/* ---------------------------------------------------------
+   tsParticles canvas fix
+--------------------------------------------------------- */
+#tsparticles,
+#tsparticles canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -999 !important;
+  pointer-events: none;
+}
