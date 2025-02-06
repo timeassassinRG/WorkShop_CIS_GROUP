@@ -121,32 +121,35 @@ document.addEventListener("DOMContentLoaded", () => {
     .catch(err => console.error("Error loading programSpeakers:", err));
 
   // --- CFP & CONTACTS ---
-  fetch('assets/data/cfpContacts.json')
-    .then(response => response.json())
-    .then(data => {
-      document.getElementById('cfp-title').textContent = data.cfpTitle;
-      const cfpContentEl = document.getElementById('cfp-content');
-      cfpContentEl.innerHTML = `
-        <h4 style="color: #ff6600;">${data.cfpContent.title}</h4>
-        <p>${data.cfpContent.locationDate}</p>
-        <p>${data.cfpContent.intro}</p>
-        <p>${data.cfpContent.topicsOfInterest}</p>
-        <p>${data.cfpContent.submissionInfo}</p>
-        <p>${data.cfpContent.proceedingsInfo}</p>
-      `;
-      const datesLabel = document.createElement('p');
-      datesLabel.innerHTML = data.cfpContent.importantDates.label;
-      cfpContentEl.appendChild(datesLabel);
-      const ul = document.createElement('ul');
-      data.cfpContent.importantDates.dates.forEach(d => {
-        const li = document.createElement('li');
-        li.textContent = d;
-        ul.appendChild(li);
-      });
-      cfpContentEl.appendChild(ul);
-      // (Eventuali dati per la sezione "Contatti" possono essere gestiti in pagina dedicata)
-    })
-    .catch(err => console.error("Errore cfpContacts:", err));
+fetch('assets/data/cfpContacts.json')
+.then(response => response.json())
+.then(data => {
+  document.getElementById('cfp-title').textContent = data.cfpTitle;
+  const cfpContentEl = document.getElementById('cfp-content');
+  cfpContentEl.innerHTML = `
+    <h4 style="color: #ff6600;">${data.cfpContent.title}</h4>
+    <p>${data.cfpContent.locationDate}</p>
+    <p>${data.cfpContent.intro}</p>
+    <p>${data.cfpContent.topicsOfInterest}</p>
+    <p>${data.cfpContent.submissionInfo}</p>
+    <!-- Rimosso il riferimento a proceedingsInfo e specialIssueInfo -->
+  `;
+  
+  // Aggiungi le Important Dates se presenti
+  if(data.cfpContent.importantDates) {
+    const datesLabel = document.createElement('p');
+    datesLabel.innerHTML = data.cfpContent.importantDates.label;
+    cfpContentEl.appendChild(datesLabel);
+    const ul = document.createElement('ul');
+    data.cfpContent.importantDates.dates.forEach(d => {
+      const li = document.createElement('li');
+      li.textContent = d;
+      ul.appendChild(li);
+    });
+    cfpContentEl.appendChild(ul);
+  }
+})
+.catch(err => console.error("Errore cfpContacts:", err));
 
   // --- COMMITTEE ---
   fetch("assets/data/committee.json")

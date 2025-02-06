@@ -1,14 +1,10 @@
 {
   "title": "Important Dates",
   "dates": [
-    {"event": "Call for Papers (CfP) Released", "date": "February 4, 2025"},
     {"event": "Paper Submission Deadline", "date": "May 15, 2025"},
     {"event": "Notification of Acceptance", "date": "June 15, 2025"},
-    {"event": "Camera-Ready Papers (Pre-Workshop)", "date": "July 10, 2025"},
-    {"event": "Workshop Dates", "date": "July 31 - August 1, 2025"},
-    {"event": "Revised Paper Submission for Post-Proceedings", "date": "September 30, 2025"},
-    {"event": "Final Acceptance of Revised Papers", "date": "October 31, 2025"},
-    {"event": "Camera-Ready Papers (Post-Proceedings)", "date": "November 15, 2025"},
-    {"event": "Publication of Proceedings", "date": "December 2025 - January 2026"}
+    {"event": "Camera-Ready Papers (Pre-Workshop)", "date": "June 30, 2025"},
+    {"event": "Early-registration deadline", "date": "June 30, 2025"},
+    {"event": "Workshop Dates", "date": "July 31 - August 1, 2025"}
   ]
 }
