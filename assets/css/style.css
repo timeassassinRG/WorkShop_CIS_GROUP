@@ -68,7 +68,7 @@ body {
 /* Sovrascrivo l’altezza minima del carosello */
 .carousel-inner {
   margin-bottom: 2rem;
-  min-height: 450px !important; 
+  min-height: 500px !important; 
 }
 
 /* Ogni slide riempie l’intero hero */
