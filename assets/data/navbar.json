@@ -1,14 +1,12 @@
 {
   "brand": "WBO25",
   "links": {
-    "aimsScope": "Aims & Scope",
-    "topics": "Topics",
-    "program": "Program & Speakers",
-    "committee": "Committee",
+    "program": "Plenary Speakers",
+    "importantDates": "Important Dates",
     "cfp": "Call for Papers",
     "submissionDetails": "Submission Details",
-    "venue": "Venue",
+    "committee": "Committee",
     "registration": "Registration",
-    "importantDates": "Important Dates"
+    "venue": "Venue"
   }
 }

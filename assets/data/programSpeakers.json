@@ -1,17 +1,17 @@
 {
-  "programTitle": "Program & Speakers",
-  "programIntro": "<strong>Detailed program schedule will be announced soon</strong>. <em>Plenary Speakers</em>:",
-  "speakersLabel": "Plenary Speakers",
+  "programTitle": "Plenary Speakers",
+  "programIntro": "<strong>Plenary Speakers will be announced soon</strong>.",
+  "speakersLabel": "",
   "speakers": [
     {
-      "name": "El-Ghazali Talbi",
-      "description": "Full Professor in Computer Science at the University of Lille (France), and head of the optimization group of the Computer Science Laboratory (L.I.F.L.). His current research interests are in the fields of metaheuristics, parallel algorithms, multi-objective combinatorial optimization, cluster and grid computing, hybrid and cooperative optimization, and application to bioinformatics, networking, transportation, and logistics.",
-      "image": "assets/img/talbi.jpg"
+      "name": "TBA",
+      "description": "To be announced",
+      "image": "assets/img/doodle.jpg"
     },
     {
-      "name": "Helena Ramalhinho Lourenço",
-      "description": "Full Professor at the Economics and Business Department at the University Pompeu Fabra, Barcelona, Spain. She has been involved in different research projects and consulting for business firms in the area of Operations Research and Logistics. Her research interests include Operations Research, Scheduling, Combinatorial Optimization, Metaheuristics, Iterated Local Search, Heuristic Search Optimization, Vehicle Routing, and applications on Supply Chain Management, Logistics, Operations Management and Health Care.",
-      "image": "assets/img/lourenco.jpg"
+      "name": "TBA",
+      "description": "To be announced",
+      "image": "assets/img/doodle.jpg"
     }
   ],
   "programCommitteeText": "We are evaluating potential members for the Program Committee. For suggestions or proposals, contact us!"

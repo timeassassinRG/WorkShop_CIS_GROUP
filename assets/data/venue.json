@@ -1,6 +1,6 @@
 {
-  "title": "Venue",
-  "description": "<p>The workshop will be held at the <strong>Department of Mathematics and Computer Science, University of Catania, Italy</strong>. The venue is easily accessible by public transportation and offers ample parking facilities.</p><p>Please refer to the map below for directions.</p>",
+  "title": "Venue & Accommodation",
+  "description": "<p>The workshop will be held at the <strong>Department of Mathematics and Computer Science, University of Catania, Italy</strong>. The venue is easily accessible by public transportation and offers accommodations nearby.</p><p>For details, visit: <a href='https://web.dmi.unict.it/' target='_blank'>University of Catania - DMI</a>.</p>",
   "images": [
     { "src": "assets/img/venue1.jpg", "alt": "Department Entrance" },
     { "src": "assets/img/venue2.jpg", "alt": "Lecture Hall" },
