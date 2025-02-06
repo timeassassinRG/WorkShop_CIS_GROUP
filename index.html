@@ -24,61 +24,54 @@
 <body>
 <!-- Contenitore per tsParticles -->
   <div id="tsparticles"></div>
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-dark navbar-expand-lg py-3">
-    <div class="container">
-      
-      <!-- Brand -->
-      <a class="navbar-brand fw-bold" href="#hero" id="navbar-brand"></a>
-      
-      <button 
-        class="navbar-toggler" 
-        type="button" 
-        data-bs-toggle="collapse" 
-        data-bs-target="#navbarNav" 
-        aria-controls="navbarNav" 
-        aria-expanded="false" 
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#aims-scope" id="nav-aims-scope"></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#topics" id="nav-topics"></a>
-          </li>
-          <!-- Sezione Program & Speakers esistente -->
-          <li class="nav-item">
-            <a class="nav-link" href="#program" id="nav-program"></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#committee" id="nav-committee">Committee</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#cfp" id="nav-cfp"></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#program-schedule" id="nav-program-schedule">Program Schedule</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#submission-details" id="nav-submission-details">Submission Details</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#venue" id="nav-venue">Venue</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#registration" id="nav-registration">Registration</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#important-dates" id="nav-importantDates"></a>
-          </li>
-        </ul>
-      </div>
+
+<nav class="navbar navbar-dark navbar-expand-lg py-3">
+  <div class="container">
+    <!-- Brand -->
+    <a class="navbar-brand fw-bold" href="#hero">WBO25</a>
+    
+    <button 
+      class="navbar-toggler" 
+      type="button" 
+      data-bs-toggle="collapse" 
+      data-bs-target="#navbarNav" 
+      aria-controls="navbarNav" 
+      aria-expanded="false" 
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#program">Speakers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#important-dates">Important Dates</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#cfp">Call for Papers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#submission-details">Submission Details</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#committee">Committee</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#registration">Registration</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#venue">Venue</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
   <!-- FINE NAVBAR -->
 
   <!-- HERO con carousel -->
@@ -129,21 +122,38 @@
     <div class="section-divider"></div>
   </section>
 
-  <!-- SEZIONE TOPICS & PROCEEDINGS -->
-  <section id="topics" class="fade-up">
-    <div class="container">
-      <h2 class="section-title" id="topics-title"></h2>
-      <!-- TOPICS -->
-      <div class="dark-card mb-4" id="topics-content">
-        <!-- Contenuto iniettato via JS -->
-      </div>
-      <!-- PROCEEDINGS & SPECIAL ISSUE -->
-      <div class="dark-card" id="proceedings-content">
-        <!-- Contenuto iniettato via JS -->
-      </div>
+  <!-- SEZIONE TOPICS -->
+<section id="topics" class="fade-up">
+  <div class="container">
+    <h2 class="section-title" id="topics-title"></h2>
+    <div class="dark-card mb-4" id="topics-content">
+      <!-- Contenuto iniettato via JS -->
     </div>
-    <div class="section-divider"></div>
-  </section>
+  </div>
+  <div class="section-divider"></div>
+</section>
+
+<!-- SEZIONE PROCEEDINGS -->
+<section id="proceedings" class="fade-up">
+  <div class="container">
+    <h2 class="section-title">Proceedings</h2>
+    <div class="dark-card" id="proceedings-content">
+      <!-- Contenuto iniettato via JS -->
+    </div>
+  </div>
+  <div class="section-divider"></div>
+</section>
+
+<!-- SEZIONE SPECIAL ISSUE -->
+<section id="special-issue" class="fade-up">
+  <div class="container">
+    <h2 class="section-title">Special Issue</h2>
+    <div class="dark-card" id="special-issue-content">
+      <!-- Contenuto iniettato via JS -->
+    </div>
+  </div>
+  <div class="section-divider"></div>
+</section>
 
   <!-- SEZIONE SPEAKERS -->
   <section id="program" class="fade-up">
@@ -277,9 +287,107 @@
     <div class="section-divider"></div>
   </section> -->
 
+  <!-- HOW TO REACH -->
+  <section id="how-to-reach" class="fade-up">
+    <div class="container">
+      <h2 class="section-title">How to Reach Us</h2>
+      <div class="dark-card text-center">
+        <h3 style="color: #ff6600;">Getting to DMI from Catania Airport</h3>
+        <p class="mb-4">Find detailed directions and transportation options from Fontanarossa Airport to the Department of Mathematics and Computer Science (DMI).</p>
+        <a href="how-to-reach.html" class="btn btn-primary btn-lg">
+          View Transportation Options <i class="fas fa-arrow-right ms-2"></i>
+        </a>
+      </div>
+    </div>
+    <div class="section-divider"></div>
+  </section>
 
+  <!-- CONTACT SECTION -->
+<section id="contact" class="fade-up">
+  <div class="container">
+    <h2 class="section-title">Contact</h2>
+    <div class="dark-card">
+      <div class="row g-4">
+        <!-- Contact Info -->
+        <div class="col-lg-6">
+          <h3 style="color: #ff6600;">Get in Touch</h3>
+          <p class="mb-4">
+            Have questions about the workshop, submissions, or logistics? 
+            Reach out to us using the contact details below or send us a message directly.
+          </p>
+          <div>
+            <p>
+              For any kind of esigences feel free to contact: 
+              <ul>
+                <li><a href="mailto:carolina.crespi@phd.unict.it">carolina.crespi@phd.unict.it</a></li>
+                <li><a href="mailto:francesco.zito@phd.unict.it">francesco.zito@phd.unict.it</a></li>
+                <li><a href="mailto:claudia.cavallaro@unict.it">claudia.cavallaro@unict.it</a></li>
+                <li><a href="mailto:alessio.mezzina@phd.unict.it">alessio.mezzina@phd.unict.it</a></li>
+              </ul>
+              or use the form on the right
+            </p>
+          </div>
+          <div class="mb-3">
+            <h4 style="color: #ff6600;">Venue Information</h4>
+            <p class="mb-0">University of Catania</p>
+            <p class="mb-0">Department of Mathematics and Computer Science</p>
+            <p>Viale Andrea Doria, 6, 95125 Catania CT, Italy</p>
+          </div>
+        </div>
 
-  <!-- END IMPORTANT DATES -->
+        <!-- Contact Form -->
+        <div class="col-lg-6">
+          <form 
+            action="https://formspree.io/f/xovjlezv" 
+            method="POST"
+            class="contact-form"
+          >
+            <div class="mb-3">
+              <input 
+                type="text" 
+                name="name" 
+                class="form-control dark-input" 
+                placeholder="Your Name" 
+                required
+              >
+            </div>
+            <div class="mb-3">
+              <input 
+                type="email" 
+                name="email" 
+                class="form-control dark-input" 
+                placeholder="Your Email" 
+                required
+              >
+            </div>
+            <div class="mb-3">
+              <input 
+                type="text" 
+                name="subject" 
+                class="form-control dark-input" 
+                placeholder="Subject" 
+                required
+              >
+            </div>
+            <div class="mb-3">
+              <textarea 
+                name="message" 
+                class="form-control dark-input" 
+                rows="5" 
+                placeholder="Your Message" 
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section-divider"></div>
+</section>
 
   <!-- FOOTER -->
   <footer>

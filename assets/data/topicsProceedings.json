@@ -50,7 +50,14 @@
   "proceedings": {
     "label": "Proceedings",
     "paragraphs": [
-      "All accepted papers will be published in the workshop proceedings indexed in CPCI, Scopus, EI Engineering Index, Google Scholar, DBLP, etc. More details will be provided soon."
+      "All accepted papers will be published in the workshop proceedings indexed in CPCI, Scopus, EI Engineering Index, Google Scholar, DBLP, etc."
+    ]
+  },
+  "specialIssue": {
+    "label": "Special Issue",
+    "paragraphs": [
+      "Selected high-quality papers will be invited to submit extended versions to a special issue of the Journal of Big Optimization (JBO).",
+      "The special issue will undergo a separate peer-review process following the journal's standards."
     ]
   }
 }

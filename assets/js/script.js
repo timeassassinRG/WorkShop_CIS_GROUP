@@ -76,19 +76,25 @@ document.addEventListener("DOMContentLoaded", () => {
         });
         topicsContainer.appendChild(ul);
       });
-      const proceedingsContainer = document.getElementById('proceedings-content');
-      proceedingsContainer.innerHTML = '';
-      const procLabel = document.createElement('h4');
-      procLabel.style.color = '#ff6600';
-      procLabel.innerHTML = data.proceedings.label;
-      proceedingsContainer.appendChild(procLabel);
-      data.proceedings.paragraphs.forEach(par => {
-        const p = document.createElement('p');
-        p.innerHTML = par;
-        proceedingsContainer.appendChild(p);
-      });
+      // Proceedings Section
+    const proceedingsContainer = document.getElementById('proceedings-content');
+    proceedingsContainer.innerHTML = `
+      <h4 style="color: #ff6600;">${data.proceedings.label}</h4>
+      ${data.proceedings.paragraphs.map(p => `<p>${p}</p>`).join('')}
+    `;
+
+    // Special Issue Section
+    const specialIssueContainer = document.getElementById('special-issue-content');
+    specialIssueContainer.innerHTML = `
+      <h4 style="color: #ff6600;">${data.specialIssue.label}</h4>
+      ${data.specialIssue.paragraphs.map(p => `<p>${p}</p>`).join('')}
+    `;
+      
     })
+    
     .catch(err => console.error("Errore topicsProceedings:", err));
+
+    
 
   // --- PROGRAM & SPEAKERS ---
   fetch('assets/data/programSpeakers.json')

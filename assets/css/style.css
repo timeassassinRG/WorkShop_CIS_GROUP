@@ -414,3 +414,32 @@ footer a {
   z-index: -999 !important;
   pointer-events: none;
 }
+
+/* CONTACT SECTION */
+.contact-form .form-control {
+  background-color: #ffffff;
+  border: 1px solid #444;
+  color: #fff;
+  padding: 12px 15px;
+  margin-bottom: 1rem;
+}
+
+.contact-form .form-control:focus {
+  border-color: #ff6600;
+  box-shadow: 0 0 0 0.25rem rgba(255, 102, 0, 0.25);
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-form button[type="submit"] {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.contact-form button[type="submit"]:hover {
+  transform: translateY(-2px);
+}

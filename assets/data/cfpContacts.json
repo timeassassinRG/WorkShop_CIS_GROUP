@@ -1,13 +1,23 @@
 {
-  "cfpTitle": "Call for Papers & Contacts",
+  "cfpTitle": "Call for Papers",
   "cfpContent": {
     "title": "WBO25 – Workshop on Big Optimization",
     "locationDate": "<strong>31 July – 1 August 2025 | Department of Mathematics and Computer Science, University of Catania, Italy</strong><br/><em>Website:</em> <a href=\"web.dmi.unict.it\"> web.dmi.unict.it </a>",
     "intro": "The focus of WBO25 is on the challenges and opportunities that arise in solving large-scale and highly complex optimization problems. The workshop will feature <em>plenary talks</em>, technical sessions, and networking opportunities to foster collaboration and innovation within the scientific and industrial communities.",
     "topicsOfInterest": "<strong>Topics of Interest</strong>: heuristics and metaheuristics, large-scale optimization, AI in optimization, scalable methodologies and frameworks, and various applications in sectors such as energy, logistics, healthcare, network design, and supply chain.",
     "submissionInfo": "<strong>Submission Information</strong><br/>Proposals must be written in English and follow the workshop's formatting guidelines (available on the website). Submissions are made through the online platform: [Submission URL].",
-    "proceedingsInfo": "<strong>Proceedings & Special Issue</strong><br/>Accepted papers will be published in the workshop proceedings, and a selection may be considered for a Special Issue in an indexed journal."
+    
+    "proceedings": {
+      "title": "Proceedings",
+      "description": "All accepted papers will be published in the official workshop proceedings, which will be indexed in CPCI, Scopus, EI Engineering Index, Google Scholar, and DBLP. More details will be provided soon."
+    },
+
+    "specialIssue": {
+      "title": "Special Issue",
+      "description": "Selected high-quality papers from the workshop will be invited for submission to a Special Issue in an indexed international journal. The selection will be based on originality, technical quality, and relevance to the workshop topics."
+    }
   },
+
   "contacts": {
     "title": "Contacts",
     "info": "For more information, visit the website [URL] or write to us at:",
@@ -22,5 +32,6 @@
     },
     "sendButton": "Send"
   },
+  
   "_comment": "cfpContacts.json"
 }
