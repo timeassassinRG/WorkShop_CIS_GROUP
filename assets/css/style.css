@@ -471,3 +471,85 @@ footer a {
 .cis-logo:hover {
   transform: scale(1.05);
 }
+
+.dark-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dark-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(255, 102, 0, 0.2);
+}
+
+/* Scroll progress indicator */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: #ff6600;
+  z-index: 9999;
+  transition: width 0.3s ease;
+}
+
+/* Glowing text animation */
+.glow {
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #ff6600, 0 0 15px #ff6600;
+  }
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 20px #ff6600, 0 0 30px #ff6600;
+  }
+}
+
+/* Floating animation */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+.floating {
+  animation: float 5s ease-in-out infinite;
+}
+
+/* Enhanced particle effects */
+#tsparticles {
+  background: linear-gradient(45deg, #1a1a1a, #2d2d2d);
+}
+
+/* ---------------------------------------------------------
+   SPONSOR SECTION
+--------------------------------------------------------- */
+#sponsor {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.sponsor-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;  /* Adds space between the sponsor logos */
+}
+
+.sponsor-logo {
+  max-width: 300px;
+  width: 100%;
+  border: none;  /* Removed the orange outline */
+  border-radius: 10px;
+}
+
+/* On hover, slightly enlarge and rotate the image with a shadow effect */
+.sponsor-logo:hover {
+  transform: scale(1.1) rotate(3deg);
+  box-shadow: 0 10px 20px rgba(255, 102, 0, 0.5);
+}
+
+/* The .floating class (already defined in your CSS) applies a gentle vertical floating effect:
+   If you want a different effect or speed, adjust the keyframes or duration accordingly. */

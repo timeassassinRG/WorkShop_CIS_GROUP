@@ -347,4 +347,25 @@ tsParticles.load("tsparticles", {
     canvasEl.style.width = "100vw";
     canvasEl.style.height = "100vh";
   }
+  window.addEventListener('scroll', () => {
+    const scrollProgress = document.querySelector('.scroll-progress');
+    const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrolled = (window.scrollY / windowHeight) * 100;
+    scrollProgress.style.width = `${scrolled}%`;
+  });
+  
+  // Intersection Observer for staggered animations
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.animationDelay = `${entry.target.dataset.delay}s`;
+        entry.target.classList.add('fade-up');
+      }
+    });
+  }, { threshold: 0.1 });
+  
+  document.querySelectorAll('.stagger-animation').forEach((el, i) => {
+    el.dataset.delay = i * 0.1;
+    observer.observe(el);
+  });
 });
