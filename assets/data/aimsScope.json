@@ -1,9 +1,0 @@
-{
-  "title": "",
-  "paragraphs": [
-    "The <strong>Workshop on Big Optimization (WBO25)</strong> aims to bring together researchers, practitioners, and industry experts to explore the challenges and advancements in solving large-scale, complex optimization problems. The workshop focuses on fostering collaboration across disciplines such as computer science, operations research, artificial intelligence, and applied mathematics.",
-    "The workshop particularly emphasizes innovative approaches in <strong>heuristics, metaheuristics, and hybrid methods</strong>, as well as their applications in <strong>big data optimization, high-dimensional problem spaces, and computationally expensive domains</strong>. Participants will have the opportunity to discuss emerging trends, share best practices, and identify future directions for research in this rapidly evolving field.",
-    "WBO25 is an inclusive platform, welcoming contributions that span theoretical foundations, algorithmic developments, real-world applications, and computational frameworks. The workshop will be held in a <strong>hybrid format</strong>, allowing participants to join both in person and online."
-  ],
-  "_comment" : "aimsScope.json"
-}

@@ -229,9 +229,6 @@ fetch('assets/data/cfpContacts.json')
     .then(data => {
       const regContainer = document.querySelector('#registration .dark-card');
       let regHTML = data.description;
-      if(data.registrationLink) {
-         regHTML += `<p><a href="${data.registrationLink}" class="btn btn-primary" target="_blank">Register Now</a></p>`;
-      }
       if(data.fees) {
          regHTML += `<h4>Fees</h4>${data.fees}`;
       }
